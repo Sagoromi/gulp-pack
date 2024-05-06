@@ -1,0 +1,295 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Shop Page V2"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Shop V2",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Shop V2",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- shop-area area start -->
+      <section class="bd-shop-area section-space">
+         <div class="container">
+            <div class="row gy-24 justify-content-center">
+               <div class="col-xxl-12 col-xl-12 col-lg-12">
+                  <div class="shop-top-meta d-flex flex-wrap justify-content-between align-items-center mb-24 gap-24">
+                     <div class="product-item-count">
+                        <span><b>112</b> Item On List</span>
+                     </div>
+                     <div
+                        class="shop-selector-wrapper d-flex flex-wrap justify-content-between align-items-center gap-24">
+                        <div class="shop-selector-item d-flex justify-content-between align-items-center gap-10">
+                           <span>Show:</span>
+                           <div class="shop-selector">
+                              <select name="location" id="location">
+                                 <option>12</option>
+                                 <option>24</option>
+                                 <option>36</option>
+                                 <option>48</option>
+                                 <option>All</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="shop-selector-item d-flex justify-content-between align-items-center gap-10">
+                           <span>Sort By:</span>
+                           <div class="shop-selector-sort">
+                              <select name="sort" id="sort">
+                                 <option>Default</option>
+                                 <option>Newest</option>
+                                 <option>Price (Low > High)</option>
+                                 <option>Price (High > Low)</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-1.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-2.png",
+                        "productLabelClass" : "warning",
+                        "productLabelText" : "Features",
+                        "productTitle" : "Reallow Backpack",
+                        "productPrice" : "$999.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-3.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-4.png",
+                        "productTitle" : "Reallow T-shirts Combo",
+                        "productPrice" : "$599.99",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-5.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-6.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Face Mask",
+                        "productPrice" : "$99.00",
+                        "productDiscountPrice" : "$59.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-7.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-8.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Reallow Mens Shorts - Gray",
+                        "productPrice" : "$999.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-9.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-10.png",
+                        "productTitle" : "Reallow Shower Towel",
+                        "productPrice" : "$199",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-11.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-12.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Women Bikini",
+                        "productPrice" : "$399.00",
+                        "productDiscountPrice" : "$199.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-13.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-14.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Reallow Tent 2 Person",
+                        "productPrice" : "$1299.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-15.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-16.png",
+                        "productTitle" : "Reallow Sun Block Crime",
+                        "productPrice" : "$2999.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-17.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-18.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-50%",
+                        "productTitle" : "Reallow Women's Swimsuit",
+                        "productPrice" : "$399.00",
+                        "productDiscountPrice" : "$199.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-19.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-20.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Canvas Fabric Hammock",
+                        "productPrice" : "$1199.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-21.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-22.png",
+                        "productTitle" : "Reallow Water Bottle",
+                        "productPrice" : "$499.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-23.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-24.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Cap",
+                        "productPrice" : "$599.00",
+                        "productDiscountPrice" : "$299.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-25.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-26.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Stainless Water Bottle",
+                        "productPrice" : "$499.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-27.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-28.png",
+                        "productTitle" : "Reallow Electric Toothbrush",
+                        "productPrice" : "$299.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-29.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-30.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Walking Stick",
+                        "productPrice" : "$799.00",
+                        "productDiscountPrice" : "$499.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-31.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-32.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Reallow Mens Shorts-Khaki",
+                        "productPrice" : "$99.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-33.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-34.png",
+                        "productTitle" : "Reallow Bicker Jacket",
+                        "productPrice" : "$399.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-35.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-36.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Backpack 18L",
+                        "productPrice" : "$799.00",
+                        "productDiscountPrice" : "$999.00",
+                        })
+                     </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                     <div class="basic-pagination d-flex justify-content-center">
+                        <nav>
+                           <ul>
+                              <li>
+                                 <a class="current">1</a>
+                              </li>
+                              <li>
+                                 <a href="#">2</a>
+                              </li>
+                              <li>
+                                 <a href="#">3</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa-light fa-angle-right"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- shop-area area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

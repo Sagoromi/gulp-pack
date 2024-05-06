@@ -1,0 +1,65 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.4 mission css
+/*----------------------------------------*/
+.mission-video {
+    position: relative;
+    min-height: 500px;
+    @media #{$xs,$sm,$md} {
+        min-height: 300px;
+    }
+    @media #{$xs,$sm,$md} {
+        min-height: 300px;
+    }
+    .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color: var(--bd-white);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: var(--bd-fw-medium);
+    }
+}
+.mission-grid {
+    display: grid;
+    grid-template-columns: 32% 37% 200px;
+    justify-content: space-between;
+    gap: 50px 50px;
+    @media #{$xxl} {
+        grid-template-columns: 28% 44% 200px;
+    }
+    @media #{$xs,$sm,$md} {
+        grid-template-columns: 1fr;
+    }
+    .content {
+        .description {
+            font-size: 20px;
+            line-height: 1.5;
+            @media #{$xl} {
+                font-size: 18px;
+            }
+            @media #{$xs,$sm,$md,$lg} {
+                font-size: 16px;
+            }
+        }
+    }    
+}
+.mission-brand {
+	.item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+		.thumb {
+			padding: 20px 20px;
+			border: 1px solid var(--bd-border-primary);
+			text-align: center;
+		}
+	}
+}

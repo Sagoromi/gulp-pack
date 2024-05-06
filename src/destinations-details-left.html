@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Destinations Details"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Destinations Details Left",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Destinations Details Left",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- destinations-details area start -->
+      <section class="bd-destinations-details-area section-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-4 col-xl-4 col-lg-5 order-lg-0 order-1">
+                  <aside class="sidebar-wrapper sidebar-sticky sidebar-left">
+                     <div class="sidebar-widget-wrapper mb-30">
+                        <div class="sidebar-widget widget">
+                           <h6 class="sidebar-widget-title small mb-15">Search Here</h6>
+                           <div class="sidebar-search">
+                              <form class="sidebar-search-form" action="#" method="get">
+                                 <input type="text" value="" required="" name="s" placeholder="Search">
+                                 <button type="submit"> <i class="far fa-search"></i> </button>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="sidebar-widget-divider"></div>
+                        <div class="sidebar-widget widget">
+                           <h6 class="sidebar-widget-title small mb-15">Contact for Booking</h6>
+                           <div class="sidebar-booking">
+                              <form class="sidebar-booking-form" action="#" method="get">
+                                 <div class="input-box">
+                                    <input type="text" placeholder="Name">
+                                 </div>
+                                 <div class="input-box">
+                                    <input type="email" placeholder="Email">
+                                 </div>
+                                 <div class="input-box">
+                                    <textarea cols="30" rows="10" placeholder="Type Comment here"></textarea>
+                                 </div>
+                                 <div class="booking-btn">
+                                    @@include('button/btn-primary.html',{
+                                    "className" : "bd-btn btn-style radius-4 w-100",
+                                    "buttonText" : "Send Now",
+                                    "iconClass" : "fa-regular fa-arrow-right",
+                                    "buttonURL" : "index.html"
+                                    })
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="sidebar-widget-divider"></div>
+                        <div class="sidebar-widget widget">
+                           <h6 class="sidebar-widget-title small mb-15">Recent Tour List</h6>
+                           <div class="sidebar-widget-post">
+                              <div class="recent-post">
+                                 <div class="recent-post-thumb mr-10">
+                                    <a href="blog-details.html">
+                                       <img src="assets/images/blog/blog-image-14.png" alt="image">
+                                    </a>
+                                 </div>
+                                 <div class="recent-post-content">
+                                    <h6 class="recent-post-title small underline">
+                                       <a href="blog-details.html">Trekker's Tales: Navigating the
+                                          World's
+                                          Wonders</a>
+                                    </h6>
+                                    <span class="recent-post-price">$1999</span>
+                                 </div>
+                              </div>
+                              <div class="recent-post">
+                                 <div class="recent-post-thumb mr-10">
+                                    <a href="blog-details.html">
+                                       <img src="assets/images/blog/blog-image-15.png" alt="image">
+                                    </a>
+                                 </div>
+                                 <div class="recent-post-content">
+                                    <h6 class="recent-post-title small underline">
+                                       <a href="blog-details.html">Exploring the World, One Adventure
+                                          at a
+                                          Time</a>
+                                    </h6>
+                                    <span class="recent-post-price">$1499</span>
+                                 </div>
+                              </div>
+                              <div class="recent-post">
+                                 <div class="recent-post-thumb mr-10">
+                                    <a href="blog-details.html">
+                                       <img src="assets/images/blog/blog-image-16.png" alt="image">
+                                    </a>
+                                 </div>
+                                 <div class="recent-post-content">
+                                    <h6 class="recent-post-title small underline">
+                                       <a href="blog-details.html">Fast-Track to Your Dream
+                                          Destinations</a>
+                                    </h6>
+                                    <span class="recent-post-price">$2599</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sidebar-widget-banner p-relative">
+                        <div class="sidebar-widget-thumb p-relative">
+                           <img src="assets/images/bg/sidebar-img.png" alt="img">
+                        </div>
+                        <div class="sidebar-widget-content">
+                           <span class="bd-play-btn pulse-white mb-40"><i class="icon-call-ring"></i></span>
+                           <p class="b3 mb-0">Free Call</p>
+                           <h5 class="mb-25"><a href="tel:+0290848020">02 (908) 480-20</a></h5>
+                           <div class="sidebar-btn">
+                              <a class="bd-text-btn style-two" href="blog-list-right.html">Contact
+                                 <span class="icon__box">
+                                    <i class="fa-light fa-angle-right icon__first"></i>
+                                    <i class="fa-light fa-angle-right icon__second"></i>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </aside>
+               </div>
+               <div class="col-xxl-8 col-xl-8 col-lg-7 order-lg-1 order-0">
+                  <div class="destinations-details-wrapper">
+                     <div class="destinations-details mb-25">
+                        <div class="destinations-details-slider details-slide p-relative mb-30">
+                           <div class="swiper details-slide-activation">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/destination/destination-img-1.png" alt="image">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/destination/destination-img-2.png" alt="image">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/destination/destination-img-3.png" alt="image">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="details-slide-navigation btn-navigation">
+                              <button class="Reallow-navigation-prev"><i class="fa-regular fa-angle-left"></i></button>
+                              <button class="Reallow-navigation-next"><i class="fa-regular fa-angle-right"></i></button>
+                           </div>
+                        </div>
+                        <div class="destinations-details-content">
+                           <h3 class="destinations-details-title mb-15">Ultimate Adventure Exploring Nature's Wonders
+                           </h3>
+                           <p class="mb-15">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
+                              Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula
+                              consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet aug
+                              Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh
+                              nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
+                              We are a team of the dedicated patent professionals, united commitment toour excellence
+                              patent protection.</p>
+                           <div class="tour-details-list-box mb-35">
+                              <div class="tour-details-list-include">
+                                 <ul>
+                                    <li>
+                                       <span class="list-icon has-big secondary">
+                                          <i class="icon-flag"></i>
+                                       </span>
+                                       Country: Spain
+                                    </li>
+                                    <li>
+                                       <span class="list-icon has-big secondary">
+                                          <i class="icon-globe"></i>
+                                       </span>
+                                       Language Spoken: Spanish
+                                    </li>
+                                    <li>
+                                       <span class="list-icon has-big secondary">
+                                          <i class="fa-light fa-location-dot"></i>
+                                       </span>
+                                       Area (Km): 890Km
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tour-details-list-exclude">
+                                 <ul>
+                                    <li>
+                                       <span class="list-icon has-big secondary">
+                                          <i class="icon-doc"></i>
+                                       </span>
+                                       Visa Requirement: Yes
+                                    </li>
+                                    <li>
+                                       <span class="list-icon has-big secondary">
+                                          <i class="icon-pin"></i>
+                                       </span>
+                                       Per Person: $2340
+                                    </li>
+                                    <li>
+                                       <span class="list-icon has-big secondary">
+                                          <i class="fa-sharp fa-regular fa-buildings"></i>
+                                       </span>
+                                       Destination: 04 Tour
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p class="mb-35">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
+                              Aliquam hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+                              ultrices Maecenas</p>
+                           <div class="post-details-blockquote mb-30">
+                              <blockquote>
+                                 <h4 class="blockquote-title">The purpose of the patent system is to foster and encourage
+                                    new inventions of usefulness.</h4>
+                                 <p class="d-flex justify-content-end"><span>Thomas Jefferson</span></p>
+                              </blockquote>
+                           </div>
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
+                              hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+                              ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet aug Vestibulum auctor
+                              ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus
+                              ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</p>
+                           <div class="destinations-details-gallery">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="destinations-details-thumb image-hover-effect-two position-relative">
+                                       <img src="assets/images/destination/destination-img-2.png" alt="image">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="destinations-details-thumb image-hover-effect-two position-relative">
+                                       <img src="assets/images/destination/destination-img-3.png" alt="image">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="section-divider mt-30 mb-25"></div>
+                        <div
+                           class="destinations-details-tag d-flex flex-wrap gap-10 align-items-center justify-content-between">
+                           <div class="tagcloud">
+                              <a href="blog-details.html">Travel</a>
+                              <a href="blog-details.html">TravelTips</a>
+                              <a href="blog-details.html">Foodie</a>
+                           </div>
+                           <div class="theme-social">
+                              <a href="#"><i class="icon-facebook"></i></a>
+                              <a href="#"><i class="icon-twitter-x"></i></a>
+                              <a href="#"><i class="icon-linkedin"></i></a>
+                              <a href="#"><i class="icon-youtube"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tour-details-rating-wrapper">
+                        <div class="rewiew-content">
+                           <div class="tour-review-wrapper">
+                              <div class="media">
+                                 <div class="thumbnail">
+                                    <a href="#">
+                                       <img src="assets/images/client/05.png" alt="Author Images">
+                                    </a>
+                                 </div>
+                                 <div class="media-body">
+                                    <div class="author-info">
+                                       <h5 class="title">
+                                          <a class="hover-flip-item-wrapper" href="#">
+                                             Mason Rodriguez
+                                          </a>
+                                          <a href="#">
+                                             <i class="fa-solid fa-thumbs-up"></i>
+                                          </a>
+                                       </h5>
+                                       <ul class="bd-meta">
+                                          <li class="has-seperator">On: <span>Aug 11, 2023</span></li>
+                                          <li>
+                                             <div class="rating">
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="content">
+                                       <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut
+                                          massa mi. Aliquam in hendrerit urna. Pellentesque.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tour-review-wrapper">
+                              <div class="media">
+                                 <div class="thumbnail">
+                                    <a href="#">
+                                       <img src="assets/images/client/01.png" alt="Author Images">
+                                    </a>
+                                 </div>
+                                 <div class="media-body">
+                                    <div class="author-info">
+                                       <h5 class="title">
+                                          <a class="hover-flip-item-wrapper" href="#">
+                                             Madison Turner
+                                          </a>
+                                          <a href="#">
+                                             <i class="fa-solid fa-thumbs-up"></i>
+                                          </a>
+                                       </h5>
+                                       <ul class="bd-meta">
+                                          <li class="has-seperator">On: <span>Aug 11, 2023</span></li>
+                                          <li>
+                                             <div class="rating">
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="content">
+                                       <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut
+                                          massa mi. Aliquam in hendrerit urna. Pellentesque.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tour-review-wrapper">
+                              <div class="media">
+                                 <div class="thumbnail">
+                                    <a href="#">
+                                       <img src="assets/images/client/03.png" alt="Author Images">
+                                    </a>
+                                 </div>
+                                 <div class="media-body">
+                                    <div class="author-info">
+                                       <h5 class="title">
+                                          <a class="hover-flip-item-wrapper" href="#">
+                                             Ethan Mitchell
+                                          </a>
+                                          <a href="#">
+                                             <i class="fa-solid fa-thumbs-up"></i>
+                                          </a>
+                                       </h5>
+                                       <ul class="bd-meta">
+                                          <li class="has-seperator">On: <span>Aug 11, 2023</span></li>
+                                          <li>
+                                             <div class="rating">
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                                <a href="#"><i class="fa fa-star"></i></a>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="content">
+                                       <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut
+                                          massa mi. Aliquam in hendrerit urna. Pellentesque.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="post-comment-form">
+                        <div class="post-comments-title">
+                           <h4 class="mb-15">Leave a Comment</h4>
+                           <span class="d-block mb-25">Your email address will not be published. Required fields are
+                              marked *</span>
+                        </div>
+                        <form>
+                           <div class="row">
+                              <div class="col-xl-6">
+                                 <div class="input-box">
+                                    <input type="text" placeholder="Name">
+                                 </div>
+                              </div>
+                              <div class="col-xl-6">
+                                 <div class="input-box">
+                                    <input type="email" placeholder="Email">
+                                 </div>
+                              </div>
+                              <div class="col-xl-12">
+                                 <div class="input-box">
+                                    <textarea cols="30" rows="10" placeholder="Type Comment here"></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-xl-12">
+                                 <div class="submit-btn">
+                                    <button type="submit" class="bd-primary-btn btn-style has-arrow is-bg radius-60">
+                                       <span class="bd-primary-btn-arrow arrow-right"><i
+                                             class="fa-regular fa-arrow-right"></i></span>
+                                       <span class="bd-primary-btn-text">Post Comment</span>
+                                       <span class="bd-primary-btn-circle"></span>
+                                       <span class="bd-primary-btn-arrow arrow-left"><i
+                                             class="fa-regular fa-arrow-right"></i></span>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- destinations-details area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

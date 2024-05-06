@@ -1,0 +1,36 @@
+<article class="bd-blog-wrapper blog-default blog-style-five">
+    <div class="blog-thumb image-hover-effect">
+        <a href="blog-details.html"><img src="@@blogThumb" alt="img"></a>
+    </div>
+    <div class="blog-tag">
+        <span><a href="blog-details.html">@@tagTitle</a></span>
+    </div>
+    <div class="blog-content">
+        <div class="blog-meta-list">
+            <div class="blog-meta-item">
+                <span class="meta-icon">
+                    <i class="icon-person"></i>
+                </span>
+                <span class="meta-text">By <a class="meta-author" href="blog-details.html">@@metaAuthor</a></span>
+            </div>
+            <div class="blog-meta-item">
+                <span class="meta-icon">
+                    <i class="icon-cleander-check"></i>
+                </span>
+                <span class="meta-text"><a href="blog-details.html">@@metaDate</a></span>
+            </div>
+        </div>
+        <h5 class="blog-title mb-30 underline"><a href="blog-details.html">@@blogTitle</a></h5>
+        <div class="blog-btn">
+            @@include('button/btn-default.html',{
+            "buttonWrapper" : "bd-primary-btn btn-style has-arrow radius-60",
+            "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+            "buttonArrow" : "fa-regular fa-arrow-right",
+            "buttonTextClass" : "bd-primary-btn-text",
+            "buttonTextText" : "Read More",
+            "buttonEffect" : "bd-primary-btn-circle",
+            "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+            "ButtonLink" : "blog-detail.html",})
+        </div>
+    </div>
+</article>

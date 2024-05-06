@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Breadcrumb"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+   
+   <!-- Body main wrapper start -->
+   <main>
+      <div class="section-space-top"></div>
+      <!-- elements-breadcrumb start -->
+      @@include('breadcrumb/elements-breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area style-two theme-bg-secondary",
+      "breadcrumbContent" : "bd-breadcrumb-content",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Breadcrumb Elements",
+      "breadcrumbList" : "bd-breadcrumb-list justify-content-start",
+      "breadcrumbPageTitle" : "Elements",
+      "breadcrumbPageTitle2" : "Breadcrumb",
+      })
+      <!-- elements-breadcrumb start -->
+
+      <!-- breadcrumb area start here -->
+      <div class="elements-breadcrumb-area section-space">
+         <div class="container">
+            <div class="col-lg-12">
+               @@include('title/elements-section-title.html', {
+               "elementsSectionTitleWrapper" : "section-title-wrapper text-center fix",
+               "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+               "separatorline" : "separator__line line-left",
+               "elementsTitleWrapper" : "elements-title__wrapper",
+               "elementsSectionTitleClass" : "section__title elements__title",
+               "separatorline_2" : "separator__line line-right",
+               "elementsSectionTitleText" : "Breadcrumb Style 01",
+               "elementsSectionDesc" : ""
+               })
+            </div>
+         </div>
+      </div>
+
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Breadcrumb Style",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Breadcrumb",
+      })
+      <!-- breadcrumb area end here  -->
+
+      <!-- breadcrumb area start  -->
+      <div class="elements-breadcrumb-area section-space">
+         <div class="container">
+            <div class="col-lg-12">
+               @@include('title/elements-section-title.html', {
+               "elementsSectionTitleWrapper" : "section-title-wrapper text-center fix",
+               "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+               "separatorline" : "separator__line line-left",
+               "elementsTitleWrapper" : "elements-title__wrapper",
+               "elementsSectionTitleClass" : "section__title elements__title",
+               "separatorline_2" : "separator__line line-right",
+               "elementsSectionTitleText" : "Breadcrumb Style 02",
+               "elementsSectionDesc" : ""
+               })
+            </div>
+         </div>
+      </div>
+      @@include('breadcrumb/elements-breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area style-two theme-bg-secondary",
+      "breadcrumbContent" : "bd-breadcrumb-content",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Breadcrumb Style 02",
+      "breadcrumbList" : "bd-breadcrumb-list justify-content-start",
+      "breadcrumbPageTitle" : "Elements",
+      "breadcrumbPageTitle2" : "Breadcrumb",
+      })
+      <!-- breadcrumb area  end here  -->
+
+      <div class="section-space-bottom"></div>
+   </main>
+   <!-- Body main wrapper end -->
+   <!-- Footer area start -->
+    @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

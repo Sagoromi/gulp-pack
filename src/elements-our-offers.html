@@ -1,0 +1,456 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Offer"
+})
+
+<body>
+
+    <!-- preloader start -->
+    @@include('preloader.html')
+    <!-- preloader end -->
+
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+    <!-- Header area start -->
+    @@include('header/header-primary.html')
+    <!-- Header area end -->
+
+    <!-- Body main wrapper start -->
+    <main>
+        <div class="section-space-top"></div>
+        <!-- elements-breadcrumb start -->
+        @@include('breadcrumb/elements-breadcrumb.html', {
+        "breadcrumbSection" : "bd-breadcrumb-area style-two theme-bg-secondary",
+        "breadcrumbContent" : "bd-breadcrumb-content",
+        "breadcrumbTitleClass" : "bd-breadcrumb-title",
+        "breadcrumbTitle" : "Offer Elements",
+        "breadcrumbList" : "bd-breadcrumb-list justify-content-start",
+        "breadcrumbPageTitle" : "Elements",
+        "breadcrumbPageTitle2" : "Offer",
+        })
+        <!-- elements-breadcrumb start -->
+
+        <!-- offer style 01 start -->
+        <section class="bd-offer-area section-space">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-right">
+                        @@include('offer/offer-one.html',{
+                        "offerWrapper" : "offer-wrapper p-relative offer-thumb-bg image-bg",
+                        "offerThumb" : "assets/images/offer/offer-img-1.png",
+                        "offerContentWrapper" : "offer-content-wrap",
+                        "offerContent" : "offer-content",
+                        "sectionTitleWrapper" : "section-title-wrapper mb-30",
+                        "sectionSubtitle" : "section-subtitle color-warning mb-15",
+                        "sectionSubtitleText" : "Get offer now",
+                        "sectionTitle" : "section-title small white-text mb-20",
+                        "sectionTitleText" : "Buy 1 Package,<br>Get 1 Free Now!",
+                        "sectionDescription" : "Share the core values and principles",
+                        })
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-left">
+                        @@include('offer/offer-one.html',{
+                        "offerWrapper" : "offer-wrapper p-relative offer-thumb-bg style-two image-bg",
+                        "offerThumb" : "assets/images/offer/offer-img-2.png",
+                        "offerContentWrapper" : "offer-content-wrap left-content",
+                        "offerContent" : "offer-content",
+                        "sectionTitleWrapper" : "section-title-wrapper mb-30",
+                        "sectionSubtitle" : "section-subtitle color-warning mb-15",
+                        "sectionSubtitleText" : "Get offer now",
+                        "sectionTitle" : "section-title small white-text mb-20",
+                        "sectionTitleText" : "Ultimate Adventure <br> Awaits!",
+                        "sectionDescription" : "Share the core values and principles",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offer style 01 end -->
+
+        <!-- offer style 01 start -->
+        <section class="bd-offer-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-right">
+                       @@include('offer/offer-one.html',{
+                       "offerWrapper" : "offer-wrapper p-relative offer-thumb-bg image-bg",
+                       "offerThumb" : "assets/images/offer/offer-img-1.png",
+                       "offerContentWrapper" : "offer-content-wrap clip-path-left",
+                       "offerContent" : "offer-content",
+                       "sectionTitleWrapper" : "section-title-wrapper mb-30",
+                       "sectionSubtitle" : "section-subtitle color-warning mb-15",
+                       "sectionSubtitleText" : "Get offer now",
+                       "sectionTitle" : "section-title x-small white-text mb-20",
+                       "sectionTitleText" : "Buy 1 Package,<br>Get 1 Free Now!",
+                       "sectionDescription" : "Share the core values and principles",
+                       })
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-left">
+                       @@include('offer/offer-one.html',{
+                       "offerWrapper" : "offer-wrapper p-relative offer-thumb-bg style-two image-bg",
+                       "offerThumb" : "assets/images/offer/offer-img-2.png",
+                       "offerContentWrapper" : "offer-content-wrap clip-path-right",
+                       "offerContent" : "offer-content",
+                       "sectionTitleWrapper" : "section-title-wrapper mb-30",
+                       "sectionSubtitle" : "section-subtitle color-warning mb-15",
+                       "sectionSubtitleText" : "Get offer now",
+                       "sectionTitle" : "section-title x-small white-text mb-20",
+                       "sectionTitleText" : "Ultimate Adventure <br> Awaits!",
+                       "sectionDescription" : "Share the core values and principles",
+                       })
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- offer style 01 end -->
+
+        <!-- offer style 02 start -->
+        <section class="bd-offer-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style 2",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                       <div class="offer-wrapper p-relative offer-thumb-bg offer-style-three image-bg"
+                          data-background="assets/images/offer/offer-img-3.png">
+                          <div class="offer-mask">
+                             <img src="assets/images/shapes/offer-bg-shape.png" alt="mask">
+                          </div>
+                          <div class="offer-shape">
+                             <img src="assets/images/shapes/offer-shape.png" alt="shape">
+                          </div>
+                          <div class="offer-content-wrap">
+                             <div class="offer-content">
+                                <div class="section-title-wrapper mb-30 anim-wrapper animation-style-3">
+                                   <span class="section-subtitle color-warning mb-15">Get offer now</span>
+                                   <h2 class="section-title x-small white-text mb-20 title-animation">Ultimate Adventure Awaits!</h2>
+                                   <p>Share the core values and principles</p>
+                                </div>
+                                <div class="offer-btn">
+                                   @@include('button/btn-default.html',{
+                                   "buttonWrapper" : "bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60",
+                                   "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+                                   "buttonArrow" : "fa-regular fa-arrow-right",
+                                   "buttonTextClass" : "bd-primary-btn-text",
+                                   "buttonTextText" : "Book Now",
+                                   "buttonEffect" : "bd-primary-btn-circle",
+                                   "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+                                   "ButtonLink" : "booking.html",})
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- offer style 02 end -->
+        
+        <!-- offer style 03 start -->
+        <div class="bd-offer-area section-title-space">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style 3",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="bd-counter-area section-space p-relative half-bg">
+            <div class="container">
+                <div class="row gy-24 align-items-center justify-content-between section-title-space">
+                    <div class="col-xl-5 col-lg-7 col-md-7">
+                        <div class="section-title-wrapper anim-wrapper animation-style-3">
+                            <span class="section-subtitle color-warning mb-10">Offer</span>
+                            <h3 class="section-title white-text title-animation">Grrab up to <span
+                                    class="text-quaternary">35% off</span> on
+                                your favorite Destination</h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-5">
+                        <div class="counter-btn-wrapper d-flex justify-content-md-end">
+                            <div class="counter-btn-content text-md-center">
+                                <p class="white-text mb-20">Limited time offer, don’t miss the opportunity</p>
+                                <div class="counter-btn">
+                                    @@include('button/btn-default.html',{
+                                    "buttonWrapper" : "bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60",
+                                    "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+                                    "buttonArrow" : "fa-regular fa-arrow-right",
+                                    "buttonTextClass" : "bd-primary-btn-text",
+                                    "buttonTextText" : "Book Now",
+                                    "buttonEffect" : "bd-primary-btn-circle",
+                                    "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+                                    "ButtonLink" : "booking.html",})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="counter-wrapper counter-style-three">
+                        @@include('counter/counter-3.html', {
+                        "counterIcon" : "icon-location-crosshairs",
+                        "counterNumber" : "1199",
+                        "counterNumberIcon" : "+",
+                        "counterTitle" : "Total Destination",
+                        })
+
+                        @@include('counter/counter-3.html', {
+                        "counterIcon" : "icon-campaigns",
+                        "counterNumber" : "3",
+                        "counterNumberIcon" : "K+",
+                        "counterTitle" : "Campaigns Closed",
+                        })
+
+                        @@include('counter/counter-3.html', {
+                        "counterIcon" : "icon-circle-user",
+                        "counterNumber" : "89",
+                        "counterNumberIcon" : "+",
+                        "counterTitle" : "Our Volunteer",
+                        })
+
+                        @@include('counter/counter-3.html', {
+                        "counterIcon" : "icon-balloons",
+                        "counterNumber" : "1",
+                        "counterNumberIcon" : "M+",
+                        "counterTitle" : "Happy Traveler",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offer style 03 end -->
+
+        <!-- offer style 04 start -->
+        <section class="bd-offer-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style 4",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-xl-6 col-lg-6 col-md-12" data-aos="fade-right">
+                       <div class="offer-wrapper offer-style-four theme-bg">
+                          <div class="offer-content-wrapper">
+                             <div class="offer-content mb-25">
+                                <h2 class="section-title white-text mb-10">Special 30% off</h2>
+                                <h5 class="offer-subtitle color-warning mb-10">Select Hotel Deals</h5>
+                                <p>Share the core values and principles that drive your company. Emphasize a commitment to custome.</p>
+                            </div>
+                             <div class="offer-btn">
+                                 @@include('button/btn-default.html',{
+                                 "buttonWrapper" : "bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60",
+                                 "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+                                 "buttonArrow" : "fa-regular fa-arrow-right",
+                                 "buttonTextClass" : "bd-primary-btn-text",
+                                 "buttonTextText" : "Know More",
+                                 "buttonEffect" : "bd-primary-btn-circle",
+                                 "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+                                 "ButtonLink" : "booking.html",})
+                             </div>
+                         </div>
+                         <div class="offer-image">
+                          <img src="assets/images/offer/offer-img-4.png" alt="image">
+                         </div>
+                       </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-xl-6 col-lg-6 col-md-12" data-aos="fade-left">
+                       <div class="offer-wrapper offer-style-four warning-bg">
+                          <div class="offer-content-wrapper">
+                             <div class="offer-content mb-25">
+                                <h2 class="section-title white-text mb-10">Get 20% off</h2>
+                                <span class="b4">Lets Explore the  World</span>
+                            </div>
+                             <div class="offer-btn">
+                                 @@include('button/btn-default.html',{
+                                 "buttonWrapper" : "bd-primary-btn btn-style has-arrow is-bg is-white radius-60",
+                                 "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+                                 "buttonArrow" : "fa-regular fa-arrow-right",
+                                 "buttonTextClass" : "bd-primary-btn-text",
+                                 "buttonTextText" : "Know More",
+                                 "buttonEffect" : "bd-primary-btn-circle",
+                                 "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+                                 "ButtonLink" : "booking.html",})
+                             </div>
+                         </div>
+                         <div class="offer-image">
+                          <img src="assets/images/offer/offer-img-5.png" alt="image">
+                         </div>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- offer style 04 end -->
+
+        <!-- offer style 05 start -->
+        <section class="bd-offer-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style 5",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-4">
+                        <div class="offer-wrapper offer-style-five mt-24">
+                            <div class="offer-thumb">
+                               <img src="assets/images/trip/trip-img-15.png" alt="image">
+                            </div>
+                            <div class="offer-content">
+                               <p class="title-font mb-20">Enjoy Up to Half Off!</p>
+                               <h4 class="white-text offer-mb">Members Saving up to 50%</h4>
+                               <div class="offer-btn">
+                                  @@include('button/btn-default.html',{
+                                  "buttonWrapper" : "bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60",
+                                  "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+                                  "buttonArrow" : "fa-regular fa-arrow-right",
+                                  "buttonTextClass" : "bd-primary-btn-text",
+                                  "buttonTextText" : "Book Now",
+                                  "buttonEffect" : "bd-primary-btn-circle",
+                                  "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+                                  "ButtonLink" : "booking.html",})
+                               </div>
+                            </div>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- offer style 05 end -->
+
+        <!-- offer style 06 start -->
+        <section class="bd-offer-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Offer Style 6",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="offer-wrapper offer-style-five">
+                            <div class="offer-thumb">
+                                <img src="assets/images/activity/activity-img-10.png" alt="image">
+                            </div>
+                            <div class="offer-content">
+                                <p class="title-font mb-20">Enjoy Up to Half Off!</p>
+                                <h4 class="white-text mb-100">Unlock Special Savings: Up to 50% Off Your Next Adventure!</h4>
+                                <div class="offer-btn">
+                                    @@include('button/btn-default.html',{
+                                    "buttonWrapper" : "bd-primary-btn btn-style has-arrow is-bg btn-tertiary is-white radius-60",
+                                    "buttonRightArrow" : "bd-primary-btn-arrow arrow-right",
+                                    "buttonArrow" : "fa-regular fa-arrow-right",
+                                    "buttonTextClass" : "bd-primary-btn-text",
+                                    "buttonTextText" : "Book Now",
+                                    "buttonEffect" : "bd-primary-btn-circle",
+                                    "buttonLeftArrow" : "bd-primary-btn-arrow arrow-left",
+                                    "ButtonLink" : "booking.html",})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- offer style 06 end -->
+
+    </main>
+    <!-- Body main wrapper end -->
+
+    <!-- Footer area start -->
+     @@include('footer/footer-primary.html')
+    <!-- Footer area end -->
+
+    <!-- back to top -->
+    @@include('backtotop.html')
+
+    <!-- JS here -->
+    @@include('all-script.html')
+</body>
+
+</html>

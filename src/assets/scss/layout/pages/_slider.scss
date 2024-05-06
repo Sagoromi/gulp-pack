@@ -1,0 +1,11 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.23 Slider css
+/*----------------------------------------*/
+
+.blog_activation .swiper-slide.swiper-slide-active {
+    .blog-style-three .blog-content {
+        margin-top: -105px;
+    }
+}

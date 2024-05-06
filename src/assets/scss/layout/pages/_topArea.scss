@@ -1,0 +1,77 @@
+@use "../../utils" as *;
+/*----------------------------------------*/
+/*  4.25 Top area css
+/*----------------------------------------*/
+
+.bd-top-area {
+    background-repeat: no-repeat;
+    background-size: revert;
+    background-position: top left;
+}
+.top-area-item {
+	position: relative;
+	z-index: 5;
+	&:before {
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+	}
+    .content {
+        position: absolute;
+        bottom: 0;
+        padding: 25px 25px 25px;
+        width: 100%;
+        z-index: 10;
+        .info {
+            color: #C2C1BC;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .title {
+            color: var(--bd-white);
+            font-size: 24px;
+            font-weight: var(--bd-fw-medium);
+            &:hover {
+                color: var(--bd-primary);
+            }
+            @media #{$xs,$sm,$lg} {
+                font-size: 20px;
+            }
+        }
+    }
+    .thumb {
+        img {
+            width: 100%;
+        }
+    }
+    .link {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bd-heading);
+        background: #ffff;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        font-size: 18px;
+        opacity: 0;
+        visibility: hidden;
+        &:hover {
+            background-color: var(--bd-primary);
+            color: var(--bd-white);
+        }
+    }
+    &:hover {
+        .link {
+            top: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

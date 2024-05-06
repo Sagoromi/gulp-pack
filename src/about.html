@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "About"
+})
+
+<body>
+
+   @@include('top-all.html')
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+
+   <!-- Body main wrapper start -->
+   <main>
+
+      <!-- Breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+         "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+         "breadcrumbImageClass" : "bd-breadcrumb-bg",
+         "breadcrumbImage" : "assets/images/blog/breadcrumb/breadcrumb-01.png",
+         "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+         "breadcrumbClass" : "bd-breadcrumb",
+         "breadcrumbContent" : "bd-breadcrumb-content text-center",
+         "breadcrumbTitleClass" : "bd-breadcrumb-title",
+         "breadcrumbTitle" : "About Us",
+         "breadcrumbList" : "bd-breadcrumb-list",
+         "breadcrumbPageTitle" : "About Us",
+      })
+      <!-- Breadcrumb area end -->
+
+      <!-- About area Start -->
+      <section class="bd-about-area section-space about-bg p-relative image-bg">
+         <div class="container">
+            <div class="row gy-50 align-items-center">
+               @@include('about/about.html')
+            </div>
+         </div>
+      </section>
+      <!-- About area end -->
+
+      <!-- Why choose area staer -->
+      @@include('why-choose/why-choose-one.html')
+      <!-- Why choose area end -->
+
+      <!-- Team area start -->
+      <section class="bd-team-area fix section-space">
+         @@include('team/team-one.html')
+      </section>
+      <!-- Team area end -->
+
+      <!-- Testimonial area start -->
+      @@include('testimonial/testimonial-one.html')
+      <!-- Testimonial area end -->
+
+      <!-- Blog area start -->
+      <section class="bd-blog-area section-space p-relative">
+         @@include('blog/blog.html')
+      </section>
+      <!-- Blog area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.29 why chose css
+/*----------------------------------------*/
+.why-choose-item {
+	&.style-one {
+		background-color: var(--bd-white);
+		text-align: center;
+		padding: 40px 40px;
+		@media #{$xs,$lg,$xl} {
+			padding: 30px 25px;
+		}
+		@media #{$xxs} {
+			padding: 25px 20px;
+		}
+		.icon {
+			margin-bottom: 35px;
+			figure {
+				max-width: 65px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+		}
+		.description {
+			margin-bottom: 40px;
+			@media #{$lg} {
+				font-size: 15px;
+				margin-bottom: 30px;
+			}
+		}
+		.title {
+			font-size: 20px;
+			margin-bottom: 25px;
+		}
+		.btn-inner {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

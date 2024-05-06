@@ -1,0 +1,234 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.5 Carousel
+/*----------------------------------------*/
+
+.banner-navigation-btn {
+	button {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+		top: 50%;
+		left: 24px;
+		transform: translateY(-50%);
+		z-index: 55;
+		@include border-radius(50%);
+		color: var(--bd-heading);
+		background: var(--bd-white);
+		&:hover {
+			background-color: var(--bd-primary);
+			color: var(--bd-white);
+		}
+	}
+	.Reallow-navigation-next{
+		left: auto !important;
+		right: 24px;	
+	}
+}
+.banner-navigation-btn-2 {
+	button {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+		top: 50%;
+		left: 24px;
+		transform: translateY(-50%);
+		z-index: 55;
+		@include border-radius(50%);
+		color: var(--bd-heading);
+		background: var(--bd-white);
+		&:hover {
+			background-color: var(--bd-primary);
+			color: var(--bd-white);
+		}
+	}
+	.banner-navigation-next{
+		left: auto !important;
+		right: 24px;	
+	}
+}
+.btn-navigation {
+	button {
+		position: absolute;
+		width: 56px;
+		height: 56px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 17px;
+		top: 44%;
+		left: -80px;
+		z-index: 15;
+		@include border-radius(50%);
+		color: var(--bd-heading);
+		border: 1px solid var(--bd-border-primary);
+		background: transparent;
+		&:hover {
+			background-color: var(--bd-primary);
+			border-color: var(--bd-primary);
+			color: var(--bd-white);
+		}
+		@media #{$xxl} {
+			left: -40px;
+		}
+		@media #{$xl} {
+			left: -35px;
+		}
+		@media #{$lg} {
+			width: 36px;
+			height: 36px;
+			left: -20px;
+		}
+		@media #{$md} {
+			width: 40px;
+			height: 40px;
+			left: -45px;
+		}
+		@media #{$sm} {
+			left: -30px;
+			background-color: var(--bd-primary);
+			border-color: var(--bd-primary);
+			color: var(--bd-white);
+		}
+		@media #{$xs} {
+			width: 40px;
+			height: 40px;
+			left: -10px;
+			background-color: var(--bd-primary);
+			border-color: var(--bd-primary);
+			color: var(--bd-white);
+		}
+		@media #{$xxs} {
+			width: 35px;
+  			height: 35px;
+			left: -10px;
+			background-color: var(--bd-primary);
+			border-color: var(--bd-primary);
+			color: var(--bd-white);
+		}
+	}
+	.Reallow-navigation-next{
+		left: auto !important;
+		right: -80px;
+		@media #{$xxl} {
+			right: -40px;
+		}
+		@media #{$xl} {
+			right: -35px;
+		}
+		@media #{$lg} {
+			right: -20px;
+		}
+		@media #{$md} {
+			right: -45px;
+		}
+		@media #{$sm} {
+			right: -30px;
+		}
+		@media #{$xs} {
+			right: -10px;
+		}
+	}
+	&.style-two {
+		button {
+			color: var(--bd-white);
+			border: none;
+			background-color: #3F4C5D;
+			&:hover {
+				background-color: var(--bd-primary);
+				color: var(--bd-white);
+			}
+		}
+	}
+	// &.service-navigation {
+	// 	@media #{$xxl,$xl} {
+	// 		button {
+	// 			left: -45px;
+	// 		}
+	// 		.Reallow-navigation-next{
+	// 			right: -45px;	
+	// 		}
+	// 	}
+	// }
+	&.style-three {
+		button {
+			position: unset;
+			&:first-child {
+				margin-right: 5px;
+			}
+		}
+	} 
+}
+
+
+
+.pagination-wrappper {
+    margin-top: 40px;
+}
+
+// Common swiper dot
+.testimonial-swiper-dot,
+.team-slider-dot,
+.bd-swiper-dot {
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		background-color: #CDCDCD;
+		opacity: 1;
+		border-radius: 50%;
+		position: relative;
+		margin: 0 6px !important;
+
+		&.swiper-pagination-bullet-active {
+			background-color: var(--bd-heading);
+		}
+	}
+	&.is-white {
+		.swiper-pagination-bullet {
+			background-color: rgba(255, 255, 255, 0.2);
+	
+			&.swiper-pagination-bullet-active {
+				background-color: var(--bd-heading);
+			}
+		}
+	}
+}
+
+// Common swiper navigation
+.common-navigation{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	justify-content: center;
+}
+.testimonial-slider-button-next,
+.testimonial-slider-button-prev,
+.common-slider-button-next,
+.common-slider-button-prev {
+	font-size: 24px;
+    color: #CCCCCC;
+	&:hover {
+		color: var(--bd-heading);
+	}
+}
+
+// Feedback carousel
+.feedback__inner {
+	&:hover {
+		.hand-picked-navigation {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+}
+// service carousel

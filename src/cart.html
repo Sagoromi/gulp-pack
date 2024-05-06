@@ -1,0 +1,319 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Cart Page"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Cart",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Cart",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- Cart-area area start -->
+      <section class="bd-cart-area section-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-9 col-lg-8">
+                  <div class="bd-cart-list mb-25 mr-30">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th colspan="2" class="bd-cart-header-product">Product</th>
+                              <th class="bd-cart-header-price">Price</th>
+                              <th class="bd-cart-header-quantity">Quantity</th>
+                              <th></th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <!-- img -->
+                              <td class="bd-cart-img image-hover-effect"><a href="shop-details.html"><img
+                                       src="assets/images/shop/shop-img-4.png" alt="image"></a></td>
+                              <!-- title -->
+                              <td class="bd-cart-title"><a href="shop-details.html">Reallow Short sleeve t-shirts</a>
+                              </td>
+                              <!-- price -->
+                              <td class="bd-cart-price"><span>$499.00</span></td>
+                              <!-- quantity -->
+                              <td class="bd-cart-quantity">
+                                 <div class="bd-product-quantity">
+                                    <span class="bd-cart-minus">
+                                       <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                    <input class="bd-cart-input" type="text" value="1">
+                                    <span class="bd-cart-plus">
+                                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5 1V9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M1 5H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                 </div>
+                              </td>
+                              <!-- action -->
+                              <td class="bd-cart-action">
+                                 <button class="bd-cart-action-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.53033 1.53033C9.82322 1.23744 9.82322 0.762563 9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967L5 3.93934L1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L3.93934 5L0.46967 8.46967C0.176777 8.76256 0.176777 9.23744 0.46967 9.53033C0.762563 9.82322 1.23744 9.82322 1.53033 9.53033L5 6.06066L8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033C9.82322 9.23744 9.82322 8.76256 9.53033 8.46967L6.06066 5L9.53033 1.53033Z"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                    <span>Remove</span>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr>
+                              <!-- img -->
+                              <td class="bd-cart-img image-hover-effect"><a href="shop-details.html"> <img
+                                       src="assets/images/shop/shop-img-2.png" alt="image"></a></td>
+                              <!-- title -->
+                              <td class="bd-cart-title"><a href="shop-details.html">Reallow Backpack - 21L </a>
+                              </td>
+                              <!-- price -->
+                              <td class="bd-cart-price"><span>$999.00</span></td>
+                              <!-- quantity -->
+                              <td class="bd-cart-quantity">
+                                 <div class="bd-product-quantity">
+                                    <span class="bd-cart-minus">
+                                       <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                    <input class="bd-cart-input" type="text" value="1">
+                                    <span class="bd-cart-plus">
+                                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5 1V9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M1 5H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                 </div>
+                              </td>
+                              <!-- action -->
+                              <td class="bd-cart-action">
+                                 <button class="bd-cart-action-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.53033 1.53033C9.82322 1.23744 9.82322 0.762563 9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967L5 3.93934L1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L3.93934 5L0.46967 8.46967C0.176777 8.76256 0.176777 9.23744 0.46967 9.53033C0.762563 9.82322 1.23744 9.82322 1.53033 9.53033L5 6.06066L8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033C9.82322 9.23744 9.82322 8.76256 9.53033 8.46967L6.06066 5L9.53033 1.53033Z"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                    <span>Remove</span>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr>
+                              <!-- img -->
+                              <td class="bd-cart-img image-hover-effect"><a href="shop-details.html"> <img
+                                       src="assets/images/shop/shop-img-9.png" alt="image"></a></td>
+                              <!-- title -->
+                              <td class="bd-cart-title"><a href="shop-details.html">Reallow Shower Towel</a>
+                              </td>
+                              <!-- price -->
+                              <td class="bd-cart-price"><span>$199.00</span></td>
+                              <!-- quantity -->
+                              <td class="bd-cart-quantity">
+                                 <div class="bd-product-quantity">
+                                    <span class="bd-cart-minus">
+                                       <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                    <input class="bd-cart-input" type="text" value="1">
+                                    <span class="bd-cart-plus">
+                                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5 1V9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M1 5H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                 </div>
+                              </td>
+                              <!-- action -->
+                              <td class="bd-cart-action">
+                                 <button class="bd-cart-action-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.53033 1.53033C9.82322 1.23744 9.82322 0.762563 9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967L5 3.93934L1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L3.93934 5L0.46967 8.46967C0.176777 8.76256 0.176777 9.23744 0.46967 9.53033C0.762563 9.82322 1.23744 9.82322 1.53033 9.53033L5 6.06066L8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033C9.82322 9.23744 9.82322 8.76256 9.53033 8.46967L6.06066 5L9.53033 1.53033Z"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                    <span>Remove</span>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr>
+                              <!-- img -->
+                              <td class="bd-cart-img image-hover-effect"><a href="shop-details.html"> <img
+                                       src="assets/images/shop/shop-img-12.png" alt="image"></a></td>
+                              <!-- title -->
+                              <td class="bd-cart-title"><a href="shop-details.html">Reallow Women Bikini</a>
+                              </td>
+                              <!-- price -->
+                              <td class="bd-cart-price"><span>$399.00</span></td>
+                              <!-- quantity -->
+                              <td class="bd-cart-quantity">
+                                 <div class="bd-product-quantity">
+                                    <span class="bd-cart-minus">
+                                       <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                    <input class="bd-cart-input" type="text" value="1">
+                                    <span class="bd-cart-plus">
+                                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5 1V9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                          <path d="M1 5H9" stroke="currentColor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round"></path>
+                                       </svg>
+                                    </span>
+                                 </div>
+                              </td>
+                              <!-- action -->
+                              <td class="bd-cart-action">
+                                 <button class="bd-cart-action-btn">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M9.53033 1.53033C9.82322 1.23744 9.82322 0.762563 9.53033 0.46967C9.23744 0.176777 8.76256 0.176777 8.46967 0.46967L5 3.93934L1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L3.93934 5L0.46967 8.46967C0.176777 8.76256 0.176777 9.23744 0.46967 9.53033C0.762563 9.82322 1.23744 9.82322 1.53033 9.53033L5 6.06066L8.46967 9.53033C8.76256 9.82322 9.23744 9.82322 9.53033 9.53033C9.82322 9.23744 9.82322 8.76256 9.53033 8.46967L6.06066 5L9.53033 1.53033Z"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                    <span>Remove</span>
+                                 </button>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="bd-cart-bottom">
+                     <div class="row align-items-end">
+                        <div class="col-xl-7 col-md-8">
+                           <div class="bd-cart-coupon">
+                              <form action="#">
+                                 <div class="bd-cart-coupon-input-box">
+                                    <label>Coupon Code:</label>
+                                    <div class="bd-cart-coupon-input d-flex flex-wrap gap-15 align-items-center">
+                                       <input type="text" placeholder="Enter Coupon Code">
+                                       <button type="submit" class="bd-primary-btn btn-style is-bg radius-60">
+                                          <span class="bd-primary-btn-text">Apply Coupon</span>
+                                          <span class="bd-primary-btn-circle"></span>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="col-xl-5 col-md-4">
+                           <div class="bd-cart-update text-md-end">
+                              <button type="submit" class="bd-primary-btn btn-style is-bg radius-60">
+                                 <span class="bd-primary-btn-text">Update Cart</span>
+                                 <span class="bd-primary-btn-circle"></span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="bd-cart-checkout-wrapper">
+                     <div class="bd-cart-checkout-top d-flex align-items-center justify-content-between">
+                        <span class="bd-cart-checkout-top-title">Subtotal</span>
+                        <span class="bd-cart-checkout-top-price">$742</span>
+                     </div>
+                     <div class="bd-cart-checkout-shipping">
+                        <h4 class="bd-cart-checkout-shipping-title">Shipping</h4>
+                        <div class="bd-cart-checkout-shipping-option-wrapper">
+                           <div class="bd-cart-checkout-shipping-option">
+                              <input id="flat_rate" type="radio" name="shipping">
+                              <label for="flat_rate">Flat rate: <span>$20.00</span></label>
+                           </div>
+                           <div class="bd-cart-checkout-shipping-option">
+                              <input id="local_pickup" type="radio" name="shipping">
+                              <label for="local_pickup">Local pickup: <span> $25.00</span></label>
+                           </div>
+                           <div class="bd-cart-checkout-shipping-option">
+                              <input id="free_shipping" type="radio" name="shipping">
+                              <label for="free_shipping">Free shipping</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bd-cart-checkout-total d-flex align-items-center justify-content-between">
+                        <span>Total</span>
+                        <span>$724</span>
+                     </div>
+                     <div class="bd-cart-checkout-proceed">
+                        <button type="submit" class="bd-primary-btn btn-style is-bg radius-60 w-100">
+                           <span class="bd-primary-btn-text">Proceed to Checkout</span>
+                           <span class="bd-primary-btn-circle"></span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Cart-area area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

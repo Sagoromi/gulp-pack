@@ -1,0 +1,76 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.4 category css
+/*----------------------------------------*/
+
+// Related style
+.related-item {
+    &:hover {
+        &:hover {
+            .thumb {
+                img {
+                    @include transform(scale(1.1));
+                }
+            }
+        }
+    }
+    .thumb {
+        overflow: hidden;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        & > .title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            @media #{$xxl} {
+                font-size: 24px;
+            }
+            @media #{$sm,$lg} {
+                font-size: 20px;
+            }
+            @media #{$md} {
+                font-size: 24px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+            }
+            a {
+                &:hover {
+                    color: var(--bd-primary);
+                }
+            }
+        }
+    }
+    .meta-inner {
+        padding-top: 25px;
+        border-top: 1px solid var(--bd-border-primary);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .bd-meta {
+            gap: 10px;
+        }
+}
+    .bd-meta {
+       .meta-item {
+        .icon {
+            color: #B9B9B9;
+            font-size: 20px;
+        }
+       }
+    }
+}
+.related-slider-active {
+    .swiper-wrapper {
+        .swiper-slide {
+            &:nth-child(2n+1) {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Order Page"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Order Confirm",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Order",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- order-area area start -->
+      <section class="order-area section-space">
+         <div class="container">
+            <div class="row gx-0 justify-content-center">
+               <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-12">
+                  <div class="order-inner">
+                  <div class="order-details mb-35">
+                     <div class="order-details-top text-center mb-70">
+                        <div class="order-details-icon">
+                           <span>
+                              <svg class="line-dash" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M46 26V51H6V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 <path d="M51 13.5H1V26H51V13.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 <path d="M26 51V13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 <path d="M26 13.5H14.75C13.0924 13.5 11.5027 12.8415 10.3306 11.6694C9.15848 10.4973 8.5 8.9076 8.5 7.25C8.5 5.5924 9.15848 4.00269 10.3306 2.83058C11.5027 1.65848 13.0924 1 14.75 1C23.5 1 26 13.5 26 13.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 <path d="M26 13.5H37.25C38.9076 13.5 40.4973 12.8415 41.6694 11.6694C42.8415 10.4973 43.5 8.9076 43.5 7.25C43.5 5.5924 42.8415 4.00269 41.6694 2.83058C40.4973 1.65848 38.9076 1 37.25 1C28.5 1 26 13.5 26 13.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="order-details-content">
+                           <h3 class="order-details-title mb-15">Your Order Confirmed</h3>
+                           <p>We're excited to inform you that your order is on its way! As soon as your package ships, we'll send you a shipping confirmation email with all the necessary details to track your delivery.</p>
+                           <p>Thank you for choosing us for your purchase. We appreciate your patience and support.</p>
+                        </div>
+                     </div>
+                     <div class="order-details-item-wrapper">
+                        <div class="row justify-content-start gy-24">
+                           <div class="col-xl-3 col-lg-6 col-sm-6">
+                              <div class="order-details-item">
+                                 <h4>Order Date:</h4>
+                                 <p>February 29 2024</p>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-6 col-sm-6">
+                              <div class="order-details-item">
+                                 <h4>Expected Delivery: </h4>
+                                 <p>March 25 2024</p>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-6 col-sm-6">
+                              <div class="order-details-item">
+                                 <h4>Order Number:</h4>
+                                 <p>#TG-0985</p>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-6 col-sm-6">
+                              <div class="order-details-item">
+                                 <h4>Payment Method:</h4>
+                                 <p>Credit Card</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="order-info-wrapper">
+                     <h4 class="order-info-title">Order Details</h4>
+
+                     <div class="order-info-list">
+                        <ul>
+
+                           <!-- header -->
+                           <li class="order-info-list-header">
+                              <h4>Product</h4>
+                              <h4>Total</h4>
+                           </li>
+
+                           <!-- item list -->
+                           <li class="order-info-list-desc">
+                              <p>Reallow Short sleeve t-shirts <span> x 1</span></p>
+                              <span>$499.00</span>
+                           </li>
+                           <li class="order-info-list-desc">
+                              <p>Reallow Backpack <span> x 1</span></p>
+                              <span>$999.00</span>
+                           </li>
+                           <!-- subtotal -->
+                           <li class="order-info-list-subtotal">
+                              <span>Subtotal</span>
+                              <span>$1498.00</span>
+                           </li>
+
+                           <!-- shipping -->
+                        <!-- shipping -->
+                        <li class="order-info-list-shipping">
+                           <span>Shipping</span>
+                           <div class="order-info-list-shipping-item d-flex flex-column align-items-end">
+                              <span>
+                                 <input id="shipping_info" type="checkbox">
+                                 <label for="shipping_info">Flat rate: <span>$20.00</span></label>
+                              </span>
+                           </div>
+                        </li>
+
+                           <!-- total -->
+                           <li class="order-info-list-total">
+                              <span>Total</span>
+                              <span>$1518.00</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </section>
+      <!-- order-area area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

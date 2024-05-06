@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Shop Page"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Shop",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Shop",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- shop-area area start -->
+      <section class="bd-shop-area section-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-8 col-xl-8 col-lg-12">
+                  <div class="shop-top-meta d-flex flex-wrap justify-content-between align-items-center mb-24 gap-24">
+                     <div class="product-item-count">
+                        <span><b>112</b> Item On List</span>
+                     </div>
+                     <div
+                        class="shop-selector-wrapper d-flex flex-wrap justify-content-between align-items-center gap-24">
+                        <div class="shop-selector-item d-flex justify-content-between align-items-center gap-10">
+                           <span>Show:</span>
+                           <div class="shop-selector">
+                              <select name="location" id="location">
+                                 <option>12</option>
+                                 <option>24</option>
+                                 <option>36</option>
+                                 <option>48</option>
+                                 <option>All</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="shop-selector-item d-flex justify-content-between align-items-center gap-10">
+                           <span>Sort By:</span>
+                           <div class="shop-selector-sort">
+                              <select name="sort" id="sort">
+                                 <option>Default</option>
+                                 <option>Newest</option>
+                                 <option>Price (Low > High)</option>
+                                 <option>Price (High > Low)</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-1.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-2.png",
+                        "productLabelClass" : "warning",
+                        "productLabelText" : "Features",
+                        "productTitle" : "Reallow Backpack",
+                        "productPrice" : "$999.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-3.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-4.png",
+                        "productTitle" : "Reallow T-shirts",
+                        "productPrice" : "$599.99",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-5.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-6.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Face Mask",
+                        "productPrice" : "$99.00",
+                        "productDiscountPrice" : "$59.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-7.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-8.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "TG Mens Shorts - Gray",
+                        "productPrice" : "$999.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-9.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-10.png",
+                        "productTitle" : "Reallow Shower Towel",
+                        "productPrice" : "$199",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-11.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-12.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Women Bikini",
+                        "productPrice" : "$399.00",
+                        "productDiscountPrice" : "$199.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-13.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-14.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Reallow Tent 2 Person",
+                        "productPrice" : "$1299.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-15.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-16.png",
+                        "productTitle" : "Sun Block Crime",
+                        "productPrice" : "$2999.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-17.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-18.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-50%",
+                        "productTitle" : "TG Women's Swimsuit",
+                        "productPrice" : "$399.00",
+                        "productDiscountPrice" : "$199.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-19.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-20.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Canvas Lounge",
+                        "productPrice" : "$1199.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-21.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-22.png",
+                        "productTitle" : "Reallow Water Bottle",
+                        "productPrice" : "$499.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-23.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-24.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Cap",
+                        "productPrice" : "$599.00",
+                        "productDiscountPrice" : "$299.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-25.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-26.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "Stainless Water Bottle",
+                        "productPrice" : "$499.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-27.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-28.png",
+                        "productTitle" : "TG Electric Toothbrush",
+                        "productPrice" : "$299.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-29.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-30.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "Reallow Walking Stick",
+                        "productPrice" : "$799.00",
+                        "productDiscountPrice" : "$499.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-with-label.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-31.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-32.png",
+                        "productLabelClass" : "success",
+                        "productLabelText" : "New",
+                        "productTitle" : "TG Mens Shorts-Khaki",
+                        "productPrice" : "$99.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product.html', {
+                        "productThumbOne" : "assets/images/shop/shop-img-33.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-34.png",
+                        "productTitle" : "Reallow Bicker Jacket",
+                        "productPrice" : "$399.00",
+                        })
+                     </div>
+                     <div class="col-xxl-4 col-xl-4 col-lg4 col-md-4 col-sm-6">
+                        @@include('shop/product-discount.html', {
+                        "productThumbOne" : "assets/images/shop/recent-product-3.png",
+                        "productThumbTwo" : "assets/images/shop/shop-img-36.png",
+                        "productLabelClass" : "danger",
+                        "productLabelText" : "-20%",
+                        "productTitle" : "TG Modern Sunless",
+                        "productPrice" : "$799.00",
+                        "productDiscountPrice" : "$999.00",
+                        })
+                     </div>
+                  </div>
+                  <div class="pagination-wrapper">
+                     <div class="basic-pagination">
+                        <nav>
+                           <ul>
+                              <li>
+                                 <a class="current">1</a>
+                              </li>
+                              <li>
+                                 <a href="#">2</a>
+                              </li>
+                              <li>
+                                 <a href="#">3</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa-light fa-angle-right"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-6">
+                  <aside class="sidebar-wrapper sidebar-sticky">
+                     <div class="sidebar-widget-wrapper mb-30">
+                        <div class="sidebar-widget widget">
+                           <h6 class="sidebar-widget-title small mb-15">Search Here</h6>
+                           <div class="sidebar-search">
+                              <form class="sidebar-search-form" action="#" method="get">
+                                 <input type="text" value="" required="" name="s" placeholder="Search">
+                                 <button type="submit"> <i class="far fa-search"></i> </button>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="sidebar-widget-divider"></div>
+                        <div class="sidebar-widget widget">
+                           <h6 class="sidebar-widget-title small mb-15">Price Filter</h6>
+                           <div class="sidebar-widget-range">
+                              <div id="slider-range"></div>
+                              <div class="price-filter mt-10"><input type="text" id="amount">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sidebar-widget-divider"></div>
+                        <div class="sidebar-widget widget">
+                           <h6 class="sidebar-widget-title small mb-15">Best Sell</h6>
+                           <div class="sidebar-widget-post">
+                              <div class="best-sell-post">
+                                 <div class="best-sell-post-thumb mr-10">
+                                    <a href="shop-details.html">
+                                       <img src="assets/images/shop/recent-product.png" alt="image">
+                                    </a>
+                                 </div>
+                                 <div class="best-sell-post-content">
+                                    <h6 class="best-sell-post-title small underline">
+                                       <a href="shop-details.html">Reallow Suitcases</a>
+                                    </h6>
+                                    <div class="best-sell-post-price">$999.00</div>
+                                 </div>
+                              </div>
+                              <div class="best-sell-post">
+                                 <div class="best-sell-post-thumb mr-10">
+                                    <a href="shop-details.html">
+                                       <img src="assets/images/shop/recent-product-2.png" alt="image">
+                                    </a>
+                                 </div>
+                                 <div class="best-sell-post-content">
+                                    <h6 class="best-sell-post-title small underline">
+                                       <a href="shop-details.html">Reallow Smart Watch</a>
+                                    </h6>
+                                    <div class="best-sell-post-price">$249.00</div>
+                                 </div>
+                              </div>
+                              <div class="best-sell-post">
+                                 <div class="best-sell-post-thumb mr-10">
+                                    <a href="shop-details.html">
+                                       <img src="assets/images/shop/shop-img-35.png" alt="image">
+                                    </a>
+                                 </div>
+                                 <div class="best-sell-post-content">
+                                    <h6 class="best-sell-post-title small underline">
+                                       <a href="shop-details.html">Reallow Backpack 18L</a>
+                                    </h6>
+                                    <div class="best-sell-post-price">$199.00</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sidebar-widget-divider"></div>
+                        <div class="sidebar-widget widget widget_categories">
+                           <h6 class="sidebar-widget-title small mb-15">Categories</h6>
+                           <ul>
+                              <li class="underline-two"><a href="shop-details.html">Destination</a>(02)</li>
+                              <li class="underline-two"><a href="shop-details.html">Adventure</a>(04)</li>
+                              <li class="underline-two"><a href="shop-details.html">Solo Travel</a>(02)</li>
+                              <li class="underline-two"><a href="shop-details.html">Cultural</a>(05)</li>
+                              <li class="underline-two"><a href="shop-details.html">Luxury</a>(03)</li>
+                           </ul>
+                        </div>
+                        <div class="sidebar-widget-divider"></div>
+                        <div class="sidebar-widget widget widget_tag_cloud">
+                           <h6 class="sidebar-widget-title small mb-15">Popular Tags</h6>
+                           <div class="tagcloud">
+                              <a href="shop-details.html">Travel</a>
+                              <a href="shop-details.html">TravelTips</a>
+                              <a href="shop-details.html">Foodie</a>
+                              <a href="shop-details.html">Hill</a>
+                              <a href="shop-details.html">Tourism</a>
+                              <a href="shop-details.html">Journey</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sidebar-widget-banner p-relative">
+                        <div class="sidebar-widget-thumb p-relative">
+                           <img src="assets/images/bg/sidebar-img.png" alt="img">
+                        </div>
+                        <div class="sidebar-widget-content">
+                           <span class="bd-play-btn pulse-white mb-40"><i class="icon-call-ring"></i></span>
+                           <p class="b3 mb-0">Free Call</p>
+                           <h5 class="mb-25"><a href="tel:+0290848020">02 (908) 480-20</a></h5>
+                           <div class="sidebar-btn">
+                              <a class="bd-text-btn style-two" href="blog-list-right.html">Contact
+                                 <span class="icon__box">
+                                    <i class="fa-light fa-angle-right icon__first"></i>
+                                    <i class="fa-light fa-angle-right icon__second"></i>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </aside>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- shop-area area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

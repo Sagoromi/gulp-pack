@@ -1,0 +1,53 @@
+@use "../../utils" as *;
+/*----------------------------------------*/
+/*  2.12 Shortcodes
+/*----------------------------------------*/
+.get-touch-wrapper {
+    .content {
+        .title {
+            font-size: 198px;
+            line-height: 1;
+            font-family: var(--bd-ff-heading);
+            font-weight: var(--bd-fw-medium);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: url(../images/bg/breadcrumb-bg.png);
+            background-size: cover;
+            background-position: center;
+            color: transparent;
+            mix-blend-mode: luminosity;
+            text-align: center;
+            @media #{$xl} {
+                font-size: 180px;
+            }
+            @media #{$lg} {
+                font-size: 150px;
+            }
+            @media #{$md} {
+                font-size: 100px;
+            }
+            @media #{$sm} {
+                font-size: 70px;
+            }
+            @media #{$xs} {
+                font-size: 45px;
+                position: relative;
+                top: -20px;
+            }
+        }
+    }
+    .thumb {
+        text-align: end;
+        position: relative;
+        margin-top: -110px;
+        @media #{$lg} {
+            margin-top: -200px;
+        }
+    }
+}
+.cta-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}

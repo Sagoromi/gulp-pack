@@ -1,0 +1,47 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.4 Marquee Text css
+/*----------------------------------------*/
+.bd-marquee-slide-area {
+	padding: 80px 0;
+	@media #{$xs,$sm} {
+		padding: 60px 0;
+	}
+}
+.swiper-width-auto {
+	.swiper-slide {
+		width: auto;
+	}
+}
+.marquee-text {
+	font-size: 200px;
+	line-height: 1;
+	font-weight: 600;
+	position: relative;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #BCBCBC;
+	&.text-black{
+		-webkit-text-fill-color: var(--bd-black);
+		-webkit-text-stroke-width: 0;
+		-webkit-text-stroke-color: transparent;
+	}
+    @media #{$x3l} {
+        font-size: 150px;   
+    } 
+    @media #{$xl} {
+        font-size: 130px;   
+    } 
+    @media #{$lg} {
+        font-size: 120px;   
+    } 
+    @media #{$xs,$sm,$md} {
+        font-size: 90px;   
+    } 
+}
+.marquee-slide {
+	-webkit-transition-timing-function: linear!important;
+	transition-timing-function: linear!important;
+	position: relative;
+}

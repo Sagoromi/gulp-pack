@@ -1,0 +1,49 @@
+<div class="tour-wrapper @@tourWrapperClass">
+    <div class="@@tourTop">
+        <div class="@@tourThumb">
+            <a href="@@tourLink"><img src="@@tourImage" alt="image"></a>
+        </div>
+        <div class="@@tourMeta">
+            <button class="@@tourFavorite">
+                <i class="@@iconHeart"></i>
+            </button>
+            <div class="@@tourTag">
+                <span><a href="@@tourLink"><i class="@@locationIcon"></i> @@locationText</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="@@tourContent">
+        <div class="@@tourRating">
+            <div class="@@tourRatingIcon">
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+            </div>
+            <div class="@@tourRatingText">
+                <span>@@ratingText</span>
+            </div>
+        </div>
+        <h5 class="@@tourTitle"><a href="@@tourLink">@@tourTitleText</a></h5>
+        <span class="@@tourPrice">@@tourPriceText</span>
+        <div class="@@tourDivider"></div>
+
+        <div class="@@tourMeta">
+            <div class="@@tourTime">
+                <i class="@@tourTimeIcon"></i>
+                <span>@@tourTimeText</span>
+            </div>
+            <div class="@@tourBtn">
+                @@include('button/text-btn.html', {
+                "buttonClass" : "bd-text-btn style-two",
+                "buttonLink" : "booking.html",
+                "ButtonText" : "Book Now",
+                "buttonIconWrapper" : "icon__box",
+                "btnIconName" : "fa-regular fa-arrow-right-long icon__first",
+                "btnIconName_2" : "fa-regular fa-arrow-right-long icon__second",
+                })
+            </div>
+        </div>
+    </div>
+</div>

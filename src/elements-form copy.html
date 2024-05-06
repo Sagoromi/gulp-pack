@@ -1,0 +1,630 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Elements form"
+})
+
+<body>
+
+    <!-- preloader start -->
+    @@include('preloader.html')
+    <!-- preloader end -->
+
+    <!-- Header area start -->
+    @@include('header/header-primary.html')
+    <!-- Header area end -->
+    
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+    <!-- Body main wrapper start -->
+    <main>
+        <div class="section-space-top"></div>
+        <!-- elements-breadcrumb start -->
+        @@include('breadcrumb/elements-breadcrumb.html', {
+        "breadcrumbSection" : "bd-breadcrumb-area style-two theme-bg-secondary",
+        "breadcrumbContent" : "bd-breadcrumb-content",
+        "breadcrumbTitleClass" : "bd-breadcrumb-title",
+        "breadcrumbTitle" : "Form Elements",
+        "breadcrumbList" : "bd-breadcrumb-list justify-content-start",
+        "breadcrumbPageTitle" : "Elements",
+        "breadcrumbPageTitle2" : "Form",
+        })
+        <!-- elements-breadcrumb start -->
+
+        <!-- Elements form style start -->
+        <section class="bd-element-button section-space">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Default Form",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="row g-5 align-items-center justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "first Name",
+                                "formInput" : "form-input",
+                                "formInputName" : "fname",
+                                "formInputType" : "text",
+                                "formInputId" : "fname",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "First Name",
+                                })
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "last name",
+                                "formInput" : "form-input",
+                                "formInputName" : "lname",
+                                "formInputType" : "text",
+                                "formInputId" : "lname",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "Last name",
+                                })
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "contentHidden",
+                                "formInputTitleText" : "contentHidden",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "Phone Number",
+                                })
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "first Name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "password",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "Password",
+                                })
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                @@include('form/textarea.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "message",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-envelope",
+                                "formInputPlaceholder" : "Your Message",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elements form style end -->
+
+        <!-- Elements form style start -->
+        <section class="bd-element-button section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "From Label Top",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="row gy-24 align-items-center justify-content-center">
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "first Name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Last name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Phone Number",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Password",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "password",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                @@include('form/textarea.html', {
+                                "formInputIcon" : "fa-solid fa-envelope",
+                                "formInputPlaceholder" : "",
+                                "formInputBox" : "form-input-box",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Your Message",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "password",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elements form style end -->
+
+        <!-- Elements form style start -->
+        <section class="bd-element-button section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "From Label Left Side",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="row g-5 align-items-center justify-content-center">
+                            <div class="col-lg-12">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box from-flex",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "first Name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-12">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box from-flex",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Last name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-12">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box from-flex",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Phone Number",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-12">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box from-flex",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Password",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "password",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                "formInputPlaceholder" : "",
+                                })
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                @@include('form/textarea.html', {
+                                "formInputIcon" : "fa-solid fa-envelope",
+                                "formInputPlaceholder" : "",
+                                "formInputBox" : "form-input-box from-flex",
+                                "formInputTitle" : "form-input-title",
+                                "formInputFor" : "text",
+                                "formInputTitleText" : "Your Message",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "password",
+                                "formInputId" : "name",
+                                "formInputIconWrap" : "contentHidden",
+                                "formInputIcon" : "fa-solid fa-house",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elements form style end -->
+
+        <!-- Elements form style start -->
+        <section class="bd-element-button section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Default From with Icon Left",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="row g-5 align-items-center justify-content-center">
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-left",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-user",
+                                "formInputPlaceholder" : "Your Name",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-left",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-envelope",
+                                "formInputPlaceholder" : "Your Email",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-left",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-phone",
+                                "formInputPlaceholder" : "Your Phone",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-left",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-book",
+                                "formInputPlaceholder" : "Subject",
+                                })
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                @@include('form/textarea.html', {
+                                "formInputBox" : "form-input-box has-icon icon-left",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "Your Message",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "message",
+                                "formInputId" : "contentHidden",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-pen",
+                                "formInputPlaceholder" : "Your Message",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elements form style end -->
+
+        <!-- Elements form style start -->
+        <section class="bd-element-button section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Default From with Icon Right",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="row g-5 align-items-center justify-content-center">
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-right",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-user",
+                                "formInputPlaceholder" : "Your Name",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-right",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-envelope",
+                                "formInputPlaceholder" : "Your Email",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-right",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-phone",
+                                "formInputPlaceholder" : "Your Phone",
+                                })
+                            </div>
+                            <div class="col-lg-6">
+                                @@include('form/input.html', {
+                                "formInputBox" : "form-input-box has-icon icon-right",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "name",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "text",
+                                "formInputId" : "",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-book",
+                                "formInputPlaceholder" : "Subject",
+                                })
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                @@include('form/textarea.html', {
+                                "formInputBox" : "form-input-box has-icon icon-right",
+                                "formInputTitle" : "contentHidden",
+                                "formInputFor" : "name",
+                                "formInputTitleText" : "Your Message",
+                                "formInput" : "form-input",
+                                "formInputName" : "name",
+                                "formInputType" : "message",
+                                "formInputId" : "contentHidden",
+                                "formInputIconWrap" : "",
+                                "formInputIcon" : "fa-solid fa-pen",
+                                "formInputPlaceholder" : "Your Message",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elements form style end -->
+
+        <!-- Elements form style start -->
+        <section class="bd-element-button section-space">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                       @@include('title/elements-section-title.html', {
+                       "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center fix",
+                       "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                       "separatorline" : "separator__line line-left",
+                       "elementsTitleWrapper" : "elements-title__wrapper",
+                       "elementsSectionTitleClass" : "section__title elements__title",
+                       "separatorline_2" : "separator__line line-right",
+                       "elementsSectionTitleText" : "From with Floating Label",
+                       "elementsSectionDesc" : ""
+                       })
+                    </div>
+                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="row g-5 align-items-center justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="floating-form-input">
+                                    <input type="text" class="inputText" required="">
+                                    <span class="floating-label">Full Name</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="floating-form-input">
+                                    <input type="text" class="inputText" required="">
+                                    <span class="floating-label">Your Email</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="floating-form-input">
+                                    <input type="number" class="inputText" required="">
+                                    <span class="floating-label">Phone Number</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="floating-form-input">
+                                    <input type="text" class="inputText" required="">
+                                    <span class="floating-label">Subject</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <div class="form-input-box">
+                                    <div class="contentHidden">
+                                        <label for="name">Your Message<span>*</span></label>
+                                    </div>
+                                    <div class="floating-form-input">
+                                        <textarea class="textareaText" required=""></textarea>
+                                        <span class="floating-label-two">Your Message</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Elements form style end -->
+
+
+    </main>
+    <!-- Body main wrapper end -->
+
+    <!-- Footer area start -->
+     @@include('footer/footer-primary.html')
+    <!-- Footer area end -->
+
+    <!-- back to top -->
+    @@include('backtotop.html')
+
+    <!-- JS here -->
+    @@include('all-script.html')
+</body>
+
+</html>

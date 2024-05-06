@@ -1,0 +1,49 @@
+<div class="service-wrapper @@serviceWrapperClass">
+    <div class="@@serviceTop">
+        <div class="@@serviceThumb">
+            <a href="@@serviceLink"><img src="@@serviceImage" alt="image"></a>
+        </div>
+        <div class="@@serviceMeta">
+            <button class="@@serviceFavorite">
+                <i class="@@iconHeart"></i>
+            </button>
+            <div class="@@serviceTag">
+                <span><a href="@@serviceLink"><i class="@@locationIcon"></i> @@locationText</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="@@serviceContent">
+        <div class="@@serviceRating">
+            <div class="@@serviceRatingIcon">
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+                <i class="@@ratingIcon"></i>
+            </div>
+            <div class="@@serviceRatingText">
+                <span>@@ratingText</span>
+            </div>
+        </div>
+        <h5 class="@@serviceTitle"><a href="@@serviceLink">@@serviceTitleText</a></h5>
+        <span class="@@servicePrice">@@servicePriceText</span>
+        <div class="@@serviceDivider"></div>
+
+        <div class="@@serviceMeta">
+            <div class="@@serviceTime">
+                <i class="@@serviceTimeIcon"></i>
+                <span>@@serviceTimeText</span>
+            </div>
+            <div class="@@serviceBtn">
+                @@include('button/text-btn.html', {
+                "buttonClass" : "bd-text-btn style-two",
+                "buttonLink" : "blog-list-right.html",
+                "ButtonText" : "Book Now",
+                "buttonIconWrapper" : "icon__box",
+                "btnIconName" : "fa-regular fa-arrow-right-long icon__first",
+                "btnIconName_2" : "fa-regular fa-arrow-right-long icon__second",
+                })
+            </div>
+        </div>
+    </div>
+</div>

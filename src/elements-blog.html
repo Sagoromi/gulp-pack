@@ -1,0 +1,556 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Blog Element"
+})
+
+<body>
+    <!-- preloader start -->
+    @@include('preloader.html')
+    <!-- preloader end -->
+
+    <!-- Header area start -->
+    @@include('header/header-primary.html')
+    <!-- Header area end -->
+
+       <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+   
+    <!-- Body main wrapper start -->
+    <main>
+        <div class="section-space-top"></div>
+        <!-- elements-breadcrumb start -->
+        @@include('breadcrumb/elements-breadcrumb.html', {
+        "breadcrumbSection" : "bd-breadcrumb-area style-two theme-bg-secondary",
+        "breadcrumbContent" : "bd-breadcrumb-content",
+        "breadcrumbTitleClass" : "bd-breadcrumb-title",
+        "breadcrumbTitle" : "Blog Elements",
+        "breadcrumbList" : "bd-breadcrumb-list justify-content-start",
+        "breadcrumbPageTitle" : "Elements",
+        "breadcrumbPageTitle2" : "Blog",
+        })
+        <!-- elements-breadcrumb start -->
+
+        <!-- blog style start -->
+        <section class="element-blog-area section-space">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Default Blog",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row align-items-center gy-24">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-1.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Travel",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-person",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "David William",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "He Art of Adventure Exploring Uncharted Destinations",
+                        })
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-2.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Wellness",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-person",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "Will Smith",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "Mind Matters Navigating Mental Wellness in Today's World",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-3.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Trips",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-person",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "Sophia Miller",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "Roaming Routes Adventures in Every Corner of the World",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        <!-- blog style two start -->
+        <section class="element-blog-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Blog Style Two",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row gy-24 align-items-center justify-content-center">
+                    <div class="col-xl-7">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style-two",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-2.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Wellness",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-person",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "Will Smith",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "Mind Matters Navigating Mental Wellness in Today's World",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                    <div class="col-xl-7">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style-two",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-3.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Trips",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-person",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "Sophia Miller",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "Roaming Routes Adventures in Every Corner of the World",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        <!-- blog style three start -->
+        <section class="element-blog-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Blog Style Three",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row gy-24 align-items-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog-style-two.html', {
+                        "blogThumb" : "assets/images/blog/blog-image-4.png",
+                        "blogTagText" : "Travel",
+                        "metaTextLink" : "David William",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitleText" : "Exploring the World, One Adventure at a Time",
+                        })
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog-style-two.html', {
+                        "blogThumb" : "assets/images/blog/blog-image-5.png",
+                        "blogTagText" : "Wellness",
+                        "metaTextLink" : "Sophia Miller",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitleText" : "Unveiling Hidden Gems Around the Globe",
+                        })
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog-style-two.html', {
+                        "blogThumb" : "assets/images/blog/blog-image-6.png",
+                        "blogTagText" : "Travel",
+                        "metaTextLink" : "Will Smith",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitleText" : "Where Every Destination Tells a Story",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        <!-- blog style Four start -->
+        <section class="element-blog-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Blog Style Four",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row align-items-center gy-24">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-1.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Travel",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-profile",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "David William",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "He Art of Adventure Exploring Uncharted Destinations",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-2.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Wellness",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-profile",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "Will Smith",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "Mind Matters Navigating Mental Wellness in Today's World",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        @@include('blog/blog.html', {
+                        "blogWrapperClass" : "blog-default blog-style",
+                        "blogThumbClass" : "blog-thumb image-hover-effect",
+                        "blogDetailsLink" : "blog-details.html",
+                        "blogThumb" : "assets/images/blog/blog-image-3.png",
+                        "blogContent" : "blog-content",
+                        "blogTag" : "blog-tag",
+                        "blogLink" : "blog-list-right.html",
+                        "blogTagText" : "Trips",
+                        "blogMetaList" : "blog-meta-list",
+                        "blogMetaItem" : "blog-meta-item",
+                        "metaIconClass" : "meta-icon",
+                        "metaIcon" : "icon-profile",
+                        "metaTextClass" : "meta-text",
+                        "metaText" : "By ",
+                        "metaAuthor" : "meta-author",
+                        "metaTextLink" : "Sophia Miller",
+                        "metaIcon_2" : "icon-cleander-check",
+                        "metaText_2" : "",
+                        "metaTextLink_2" : "January 25 2024",
+                        "blogTitle" : "blog-title mb-25 underline",
+                        "blogTitleText" : "Roaming Routes Adventures in Every Corner of the World",
+                        "bd-text-btn style-two" : "buttonClass",
+                        "buttonLink" : "blog-details.html",
+                        "ButtonText" : "Read More",
+                        "buttonIconWrapper" : "icon-box",
+                        "btnIconName" : "fa-regular fa-arrow-right-long icon-first",
+                        "btnIconName_2" : "fa-regular fa-arrow-right-long icon-second",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        <!-- blog style Five start -->
+        <section class="element-blog-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Blog Style Five",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        @@include('blog/blog-style-four.html', {
+                        "blogThumb" : "assets/images/blog/blog-image-10.png",
+                        "tagTitle" : "Travel",
+                        "metaAuthor" : "Sophia Miller",
+                        "metaDate" : "Feb 05 2024",
+                        "blogTitle" : "Trekker's Tales: Navigating the World's Wonders",
+                        "blogDescription" : "Adventure tales, tips, and guides to ignite your wanderlust and inspire your next unforgettable journey.",
+                        })
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        @@include('blog/blog-style-four.html', {
+                        "blogThumb" : "assets/images/blog/blog-image-11.png",
+                        "tagTitle" : "Travel",
+                        "metaAuthor" : "Sophia Miller",
+                        "metaDate" : "Feb 05 2024",
+                        "blogTitle" : "Journey Journals: Tales from the Road Less Traveled",
+                        "blogDescription" : "Embark on a journey of a lifetime with our captivating travel tales, inspiring wanderlust and igniting your passion.",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        <!-- blog style Six start -->
+        <section class="element-blog-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Blog Style Six",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        @@include('blog/blog-style-six.html',{
+                        "blogThumb" : "assets/images/blog/blog-image-17.png",
+                        "blogTitle" : "Passage Perspectives: Discovering Cultures Through Travel",
+                        "blogDescription" : "Embark on an odyssey of discovery with Odyssey Oasis, where every destination",
+                        "metaAuthor" : "David William",
+                        "metaDate" : "February 25 2024",
+                        })
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        @@include('blog/blog-style-six.html',{
+                        "blogThumb" : "assets/images/blog/blog-image-18.png",
+                        "blogTitle" : "Trekker's Tales: Navigating the World's Wonders",
+                        "blogDescription" : "Embark on an odyssey of discovery with Odyssey Oasis, where every destination",
+                        "metaAuthor" : "David William",
+                        "metaDate" : "January 25 2024",
+                        })
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        @@include('blog/blog-style-six.html',{
+                        "blogThumb" : "assets/images/blog/blog-image-19.png",
+                        "blogTitle" : "Excursion Express: Fast-Track to Your Dream Destinations",
+                        "blogDescription" : "Embark on an odyssey of discovery with Odyssey Oasis, where every destination",
+                        "metaAuthor" : "David William",
+                        "metaDate" : "January 25 2024",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        <!-- blog style Six start -->
+        <section class="element-blog-area section-space-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-lg-12">
+                        @@include('title/elements-section-title.html', {
+                        "elementsSectionTitleWrapper" : "section-title-wrapper section-title-space text-center",
+                        "elementsSectionWrapper" : "elements-section__wrapper elements-line",
+                        "separatorline" : "separator__line line-left",
+                        "elementsTitleWrapper" : "elements-title__wrapper",
+                        "elementsSectionTitleClass" : "section__title elements__title",
+                        "separatorline_2" : "separator__line line-right",
+                        "elementsSectionTitleText" : "Blog Style Seven",
+                        "elementsSectionDesc" : ""
+                        })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        @@include('blog/blog-style-seven.html',{
+                        "blogThumb" : "assets/images/blog/blog-image-17.png",
+                        "blogTitle" : "Passage Perspectives: Discovering Cultures Through Travel",
+                        "metaAuthor" : "David William",
+                        "metaDate" : "February 25 2024",
+                        })
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        @@include('blog/blog-style-seven.html',{
+                        "blogThumb" : "assets/images/blog/blog-image-18.png",
+                        "blogTitle" : "Trekker's Tales: Navigating the World's Wonders",
+                        "metaAuthor" : "David William",
+                        "metaDate" : "January 25 2024",
+                        })
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        @@include('blog/blog-style-seven.html',{
+                        "blogThumb" : "assets/images/blog/blog-image-19.png",
+                        "blogTitle" : "Excursion Express: Fast-Track to Your Dream Destinations",
+                        "metaAuthor" : "David William",
+                        "metaDate" : "January 25 2024",
+                        })
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog style end -->
+
+        
+
+    </main>
+    <!-- Body main wrapper end -->
+
+    <!-- Footer area start -->
+     @@include('footer/footer-primary.html')
+    <!-- Footer area end -->
+
+    <!-- back to top -->
+    @@include('backtotop.html')
+
+    <!-- JS here -->
+    @@include('all-script.html')
+</body>
+
+</html>

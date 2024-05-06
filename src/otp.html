@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "OTP"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   
+   <!-- Body main wrapper start -->
+   <main>
+      <div class="pt-50"></div>
+
+      <!-- otp area start -->
+      <section class="bd-otp-area">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xxl-5">
+                  <div class="sign-form-wrapper text-center">
+                     <h4 class="title mb-30">OTP Verification</h4>
+                     <form class="form">
+                        <div class="otp-input mb-15">
+                           <div class="input-box">
+                              <input type="text" class="input" placeholder="">
+                           </div>
+                           <div class="input-box">
+                              <input type="text" class="input" placeholder="">
+                           </div>
+                           <div class="input-box">
+                              <input type="text" class="input" placeholder="">
+                           </div>
+                           <div class="input-box">
+                              <input type="text" class="input" placeholder="">
+                           </div>
+                        </div>
+                        <div class="sign-btn mb-20">
+                           <button type="submit" class="bd-primary-btn btn-style is-bg radius-60">
+                              <span class="bd-primary-btn-text">Verify</span>
+                              <span class="bd-primary-btn-circle"></span>
+                          </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- otp area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

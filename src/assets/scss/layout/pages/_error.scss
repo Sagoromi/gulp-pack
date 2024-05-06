@@ -1,0 +1,23 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.11 Error  css
+/*----------------------------------------*/
+
+// Erorr css style
+
+.error__content-wrapper {
+	padding: 0 50px;
+    @media #{$xs, $sm, $md} {
+        padding: 0;
+    }
+}
+.error__thumb {
+	max-width: 585px;
+	margin: 0 auto;
+}
+.error__content {
+	& > p {
+		margin-top: 0;
+	}
+}

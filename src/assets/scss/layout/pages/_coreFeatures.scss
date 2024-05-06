@@ -1,0 +1,93 @@
+@use "../../utils" as *;
+
+/*----------------------------------------*/
+/*  4.6 Core Feature css
+/*----------------------------------------*/
+
+.bd-core-features-area{
+    &.style-one{
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+}
+.core-feature-boxs{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .core-feature-box:nth-child(2){
+        grid-column-start: 2;
+        grid-row: 12;
+        background: var( --bd-black);
+        .info-title{
+            color: var(--bd-flash-white);
+        }
+        .description{
+            color: var(--bd-flash-white);
+        }
+        @supports (-webkit-text-stroke: 1px #404040) {
+            .number {
+              -webkit-text-stroke: 1px #404040;
+              -webkit-text-fill-color: var(--bd-black);
+            }
+          }
+    }
+    .core-feature-box:nth-child(3){
+        grid-column-start: 3;
+        grid-row: 13;
+        background: var( --bd-primary);
+        .info-title{
+            color: var(--bd-flash-white);
+        }
+        @supports (-webkit-text-stroke: 1px #F29587) {
+            .number {
+              -webkit-text-stroke: 1px #F29587;
+              -webkit-text-fill-color: var(--bd-primary);
+            }
+          }
+        .description{
+            color: var(--bd-flash-white);
+        }
+    }
+    .core-feature-box{
+        max-width: 283px;
+        background: var( --bd-white);
+        padding: 20px;
+        .info-title{
+            color: var(--bd-text-primary);
+            font-size: 14px;
+        }
+        .number{
+            font-size: 140px;
+            text-align: end;
+            font-weight: var(--bd-fw-bold);
+            position: relative;
+            line-height: 110px;
+            margin-bottom: 14px;
+            -webkit-text-stroke: 1px var(--bd-border-primary);
+            -webkit-text-fill-color: var( --bd-white);
+        }
+        .description{
+            font-size: 18px;
+            color:  var(--bd-black);
+        }
+    }
+ }
+.core-features-wrapper{
+    .core-features-properties-list{
+        .properties-count{
+            font-size: 80px;
+        }
+        .properties-list{
+            font-size: 20px;
+        }
+    }
+    position: relative;
+    .core-feature-info{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+
+
+

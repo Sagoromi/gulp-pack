@@ -1,0 +1,73 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.4 category css
+/*----------------------------------------*/
+.category-item {
+    &.style-one {
+        position: relative;
+        &:hover {
+            .btn-inner {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        }
+        .icon {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 35px 35px;
+            width: 100%;
+            .description {
+                margin-bottom: 5px;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .title {
+                font-size: 24px;
+                color: var(--bd-white);
+                margin-bottom: 0px;
+                a {
+                    &:hover {
+                        color: var(--bd-primary);
+                    }
+                }
+            }
+        }
+        .btn-inner {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            @extend %bd-transition-3;
+            .link {
+                width: 60px;
+                height: 60px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--bd-white);
+                font-size: 20px;
+                &:hover {
+                    color: var(--bd-white);
+                    background-color: var(--bd-primary);
+                }
+            }
+        }        
+    }
+}

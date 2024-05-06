@@ -1,0 +1,62 @@
+@use "../utils" as *;
+
+//feature from wrapper
+.feature-from-wrapper {
+    background-color: var(--bd-white);
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.04));
+    padding: 30px 30px;
+    width: 410px;
+    top: 75px;
+	right: 0;
+	@media #{$xs,$sm,$md} {
+		position: inherit;
+		top: inherit;
+		width: 100%;
+	}
+}
+.booking-select {
+	.nice-select {
+		height: 50px;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.05);
+		padding: 0 20px;
+		display: flex;
+		align-items: center;
+		float: none;
+		border: 1px solid var(--bd-border-primary);
+		border-radius: 0;
+		.current {
+			color: var(--bd-placeholder);
+			text-align: left;
+			font-size: 16px;
+			position: relative;
+		}
+		.list {
+			transform-origin: center center;
+			@include transform(scale(0.9) translateY(0px));
+			width: 100%;
+			padding: 10px 0;
+			border-radius: 0;
+		}
+		&::after {
+			color: var(--bd-text-primary);
+			font-size: 16px;
+			right: 20px;
+		}
+		.option {
+			font-size: 14px;
+			&.selected {
+				font-weight: var(--bd-fw-sbold);
+			}
+		}
+	}
+}
+.bokking-advanced {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	.title {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+}

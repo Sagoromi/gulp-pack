@@ -1,0 +1,15 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.4.4 Footer Style 4
+/*----------------------------------------*/
+.footer-4-col-1 {
+    margin-right: 35px;
+	.footer-widget-content p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.footer-4-col-3 {
+	margin-right: 65px;
+}

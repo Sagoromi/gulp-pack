@@ -1,0 +1,245 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1.1 banner Style 3
+/*----------------------------------------*/
+
+// Banner style
+.banner-style-three {
+	.subtitle {
+		color: var(--bd-white);
+		display: block;
+		margin-bottom: 30px;
+	}
+	.banner-single-item {
+		padding: 320px 0 125px 0;
+		position: relative;
+		@media #{$md,$xl} {
+			padding: 185px 0 320px;
+		}
+		@media #{$lg} {
+			padding: 185px 0 300px;
+		}
+		@media #{$md} {
+			padding: 175px 0 300px;
+		}
+		@media #{$sm} {
+			padding: 165px 0 280px;
+		}
+		@media #{$xs} {
+			padding: 135px 0 230px;
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 100%;
+			background: var(--bd-black);
+			opacity: 0.40;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	// .banner-wrapper-three{
+	// 	margin-top: 240px;
+	// }
+
+	.banner-content {
+		text-align: center;
+		@media #{$xs} {
+			max-width: 100%;
+			padding: 50px 0;
+		}
+	}
+
+	.banner-title {
+		display: block;
+		font-size: 80px;
+		color: var(--bd-white);
+		@supports (-webkit-text-stroke: 1px #F0F6F8) {
+			.banner-title-stroke {
+				-webkit-text-stroke: 1px var(--bd-aliceBlue);
+				-webkit-text-fill-color: transparent;
+			}
+		}
+
+		@media #{$xxl} {
+			font-size: 66px;
+		}
+		@media #{$xl} {
+			font-size: 60px;
+		}
+		@media #{$lg} {
+			font-size: 56px;
+		}
+		@media #{$md} {
+			font-size: 50px;
+		}
+		@media #{$sm} {
+			font-size: 46px;
+		}
+		@media #{$xs} {
+			font-size: 60px;
+		}
+		@media #{$xs} {
+			font-size: 44px;
+		}
+		@media #{$xxs} {
+			font-size: 32px;
+		}
+		.inner {
+			display: flex;
+		}
+		.arrow-shape {
+			margin-right: 30px;
+			display: block;
+			@media #{$md} {
+				margin-right: 10px;
+				max-width: 30px;
+			}
+			@media #{$xxs} {
+				margin-right: 15px;
+				max-width: 20px;
+			}
+			@media #{$xs,$sm,$md} {
+				max-width: 30px;
+			}
+		}
+	}
+
+	.banner-thumb {
+		min-height: 500px;
+		@media #{$sm,$md,$lg} {
+			min-height: 360px;
+		}
+		@media #{$xs} {
+			min-height: 280px;
+		}
+	}
+}
+
+.banner-from-three {
+	margin-top: 70px;
+	.bd-tabs {
+		display: inline-flex;
+		width: 100%;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 30px;
+		.nav-item {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			.nav-link {
+				display: inline-flex;
+				gap: 10px;
+				font-size: 14px;
+				color: var(--bd-white);
+				background-color: rgba(255, 255, 255, 0.1);
+				backdrop-filter: blur(15px);
+				-webkit-backdrop-filter: blur(15px);
+				border: none;
+				border-radius: 0;
+				border: 1px solid #82797388;
+				&.active {
+					border: 1px solid var(--bd-white);
+				}
+			}
+
+		}
+	}
+	.banner-submit {
+		@media #{$xs,$sm,$md} {
+			width: 100%;
+			button {
+				width: 100%;
+			}
+		}
+	}
+
+	.banner-booking-select {
+		display: flex;
+		align-items: center;
+		gap: 0px;
+		max-width: 943px;
+		justify-content: center;
+		margin: 0 auto;
+		@media #{$xs,$sm,$md} {
+			width: 100%;
+			flex-direction: column;
+		}
+		.booking-input {
+			input[type="text"] {
+				border: none;
+			}
+			height: 50px;
+			width: 100%;
+			background: rgba(255, 255, 255, 1);
+		}
+		.booking-select {
+			.nice-select {
+				height: 50px;
+				width: 100%;
+				background: rgba(255, 255, 255, 1);
+				padding: 0 20px;
+				display: flex;
+				align-items: center;
+				float: none;
+				border: 1px solid var(--bd-border-primary);
+				border-radius: 0;
+				.current {
+					color: var(--bd-placeholder);
+					text-align: left;
+					font-size: 16px;
+					position: relative;
+				}
+				.list {
+					transform-origin: center center;
+					@include transform(scale(0.9) translateY(0px));
+					width: 100%;
+					padding: 10px 0;
+					border-radius: 0;
+				}
+				&::after {
+					color: var(--bd-text-primary);
+					font-size: 16px;
+					right: 20px;
+				}
+				.option {
+					font-size: 16px;
+
+					&.selected {
+						font-weight: var(--bd-fw-sbold);
+					}
+				}
+			}
+		}
+
+		.booking-filter {
+			height: 50px;
+			width: 200px;
+			background: var(--bd-white);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
+		.booking-select {
+			&:not(:last-child) {
+				width: 100%;
+			}
+		}
+	}
+	.filter-info{
+		color: var(--bd-white);
+		font-size: 20px;
+	}
+	.description-info{
+		color: var(--bd-white);
+		padding-top: 85px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+}

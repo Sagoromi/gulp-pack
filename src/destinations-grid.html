@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Destinations"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Destinations",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Destinations",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- blog-grid area start -->
+      <div class="bd-blog-grid-area section-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4">
+                  @@include('trip/trip.html',{
+                  "tripWrapperClass" : "trip-style-one p-relative",
+                  "tripThumb" : "trip-thumb image-overly",
+                  "tripImage" : "assets/images/trip/trip-img-1.png",
+                  "tripTag" : "trip-tag",
+                  "tripNumber" : "trip-number",
+                  "tripNumberText" : "3 Tour",
+                  "tripLocation" : "trip-location",
+                  "tripLocationText" : "Italy",
+                  "tripLink" : "destinations-details-right.html"
+                  })
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3">
+                  @@include('trip/trip.html',{
+                  "tripWrapperClass" : "trip-style-one p-relative",
+                  "tripThumb" : "trip-thumb image-overly",
+                  "tripImage" : "assets/images/trip/trip-img-2.png",
+                  "tripTag" : "trip-tag",
+                  "tripNumber" : "trip-number",
+                  "tripNumberText" : "2 Tour",
+                  "tripLocation" : "trip-location",
+                  "tripLocationText" : "France",
+                  "tripLink" : "destinations-details-right.html"
+                  })
+                  @@include('trip/trip.html',{
+                  "tripWrapperClass" : "trip-style-one p-relative",
+                  "tripThumb" : "trip-thumb image-overly",
+                  "tripImage" : "assets/images/trip/trip-img-3.png",
+                  "tripTag" : "trip-tag",
+                  "tripNumber" : "trip-number",
+                  "tripNumberText" : "5 Tour",
+                  "tripLocation" : "trip-location",
+                  "tripLocationText" : "Turkey",
+                  "tripLink" : "destinations-details-right.html"
+                  })
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-5">
+                  @@include('trip/trip.html',{
+                  "tripWrapperClass" : "trip-style-one p-relative",
+                  "tripThumb" : "trip-thumb image-overly",
+                  "tripImage" : "assets/images/trip/trip-img-4.png",
+                  "tripTag" : "trip-tag",
+                  "tripNumber" : "trip-number",
+                  "tripNumberText" : "4 Tour",
+                  "tripLocation" : "trip-location",
+                  "tripLocationText" : "Japan",
+                  "tripLink" : "destinations-details-right.html"
+                  })
+                  <div class="row">
+                     <div class="col-md-6">
+                        @@include('trip/trip.html',{
+                        "tripWrapperClass" : "trip-style-one p-relative",
+                        "tripThumb" : "trip-thumb image-overly",
+                        "tripImage" : "assets/images/trip/trip-img-5.png",
+                        "tripTag" : "trip-tag",
+                        "tripNumber" : "trip-number",
+                        "tripNumberText" : "6 Tour",
+                        "tripLocation" : "trip-location",
+                        "tripLocationText" : "Greece",
+                        "tripLink" : "destinations-details-right.html"
+                        })
+                     </div>
+                     <div class="col-md-6">
+                        @@include('trip/trip.html',{
+                        "tripWrapperClass" : "trip-style-one p-relative",
+                        "tripThumb" : "trip-thumb image-overly",
+                        "tripImage" : "assets/images/trip/trip-img-6.png",
+                        "tripTag" : "trip-tag",
+                        "tripNumber" : "trip-number",
+                        "tripNumberText" : "2 Tour",
+                        "tripLocation" : "trip-location",
+                        "tripLocationText" : "India",
+                        "tripLink" : "destinations-details-right.html"
+                        })
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog-grid area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

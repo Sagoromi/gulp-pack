@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Team"
+})
+
+<body>
+   <!-- preloader start -->
+   @@include('preloader.html')
+   <!-- preloader end -->
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+   
+   <!-- Offcanvas area start -->
+   @@include('offcanves.html')
+   <!-- Offcanvas area start -->
+
+   <!-- search popup area start here  -->
+   @@include('offcanvas-search.html')
+   <!-- search popup area end here  -->
+
+   <!-- Body main wrapper start -->
+   <main>
+      <!-- breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+      "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+      "breadcrumbImageClass" : "bd-breadcrumb-bg",
+      "breadcrumbImage" : "assets/images/bg/breadcrumb-bg.png",
+      "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+      "breadcrumbClass" : "bd-breadcrumb d-flex align-items-center justify-content-center",
+      "breadcrumbContent" : "bd-breadcrumb-content text-center",
+      "breadcrumbTitleClass" : "bd-breadcrumb-title",
+      "breadcrumbTitle" : "Tour Guider",
+      "breadcrumbList" : "bd-breadcrumb-list",
+      "breadcrumbPageTitle" : "Tour Guider",
+      })
+      <!-- breadcrumb area end -->
+
+      <!-- team-area area start -->
+      <section  class="bd-team-area section-space">
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-1.png",
+                  "teamMemberName" : "Brendan Fraser",
+                  "teamMemberDegi" : "Tour Guide",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-2.png",
+                  "teamMemberName" : "Jude Bellingham",
+                  "teamMemberDegi" : "Manager",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-3.png",
+                  "teamMemberName" : "Sophia Miller",
+                  "teamMemberDegi" : "Marking Head",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-4.png",
+                  "teamMemberName" : "Rodrygo Silva",
+                  "teamMemberDegi" : "Financial Manager",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-9.png",
+                  "teamMemberName" : "Ivana Andrés",
+                  "teamMemberDegi" : "Tour Guide",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-10.png",
+                  "teamMemberName" : "Mason Rodriguez",
+                  "teamMemberDegi" : "Tour Guide",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-11.png",
+                  "teamMemberName" : "Eduardo Camavinga",
+                  "teamMemberDegi" : "Tour Guide",
+                  })
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-4">
+                  @@include('team/team-style-two.html',{
+                  "teamThumb" : "assets/images/team/team-img-8.png",
+                  "teamMemberName" : "Leonardo Martin",
+                  "teamMemberDegi" : "Tour Guide",
+                  })
+               </div>
+            </div>
+            <div class="pagination-wrapper d-flex justify-content-center">
+               <div class="basic-pagination">
+                  <nav>
+                     <ul>
+                        <li>
+                           <a class="current">1</a>
+                        </li>
+                        <li>
+                           <a href="#">2</a>
+                        </li>
+                        <li>
+                           <a href="#">3</a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa-light fa-angle-right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- team-area area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- back to top -->
+   @@include('backtotop.html')
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

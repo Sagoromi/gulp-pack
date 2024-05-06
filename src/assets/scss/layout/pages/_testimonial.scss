@@ -1,0 +1,201 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  4.25 Testimonial CSS
+/*----------------------------------------*/
+.testimonials-item {
+    &.style-one {
+        padding: 40px 40px;
+        background-color: var(--bd-white);
+        @media #{$xs,$md} {
+            padding: 25px 20px;
+        }
+    }
+    .title-inner {
+        margin-bottom: 20px;
+        display: flex;
+        align-content: center;
+        gap: 10px;
+        .title {
+            font-size: 24px;
+            @media #{$xs,$md} {
+                font-size: 20px;
+            }
+        }
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+}
+.admin-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+    .admin-thumbnail {
+        max-width: 60px;
+    }
+    .admin-name {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+}
+.testimonial-active {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: var(--bd-aliceBlue);
+        right: 100%;
+        z-index: 5;
+    }
+}
+.testimonial-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+// testimonial style two
+.testimonial-shapes {
+    .shape-one {
+        position: absolute;
+        top: 0;
+        right: 160px;
+        z-index: -1;
+        @media #{$xxl,$xl,$lg} {
+            max-width: 200px;
+        }
+    }
+}
+.testimonials-info-wrapper {
+    height: 100%;
+    background: var(--bd-white);
+    padding: 125px 50px;
+    @media #{$lg} {
+        padding: 115px 30px;
+    }
+    @media #{$md} {
+        padding: 100px 30px;
+    }
+    @media #{$sm} {
+        padding: 60px 30px;
+    }
+    @media #{$xs} {
+        padding: 30px 30px;
+    }
+}
+.testimonials-info-item {
+	border-bottom: 1px solid var(--bd-border-primary);
+	padding-bottom: 50px;
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .content {
+        .title {
+            font-size: 80px;
+            line-height: 1;
+            margin-bottom: 10px;
+            @media #{$xxl,$xl,$md} {
+                font-size: 68px;
+            }
+            @media #{$lg} {
+                font-size: 60px;
+            }
+            @media #{$xs,$sm} {
+                font-size: 60px;
+            }
+            @media #{$xxs} {
+                font-size: 46px;
+            }
+        }
+    }
+}
+.testimonial-content-two {
+	padding-left: 70px;
+    @media #{$lg} {
+        padding-left: 30px;
+    }
+    @media #{$xs,$sm,$md} {
+        padding-left: 0px;
+    }
+}
+.testimonials-item {
+    &.style-two {
+        .rating {
+            display: inline-block;
+            border: 1px solid var(--bd-black);
+            padding: 2px 12px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            span {
+                font-size: 14px;
+            }
+        }
+        .title {
+            font-size: 48px;
+            margin-bottom: 80px;
+            font-weight: var(--bd-fw-medium);
+            line-height: 1.2;
+            @media #{$xxl} {
+                font-size: 42px;
+            }
+            @media #{$xl} {
+                font-size: 38px;
+            }
+            @media #{$lg} {
+                font-size: 30px;
+            }
+            @media #{$md} {
+                font-size: 36px;
+                margin-bottom: 50px;
+            }
+            @media #{$sm} {
+                font-size: 28px;
+                margin-bottom: 50px;
+            }
+            @media #{$xs} {
+                font-size: 26px;
+                margin-bottom: 50px;
+            }
+        }
+        .admin-item {
+            .admin-thumbnail {
+                max-width: 80px;
+            }
+        }
+    }
+}
+.admin-nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+.testimonial-nav-prev,
+.testimonial-nav-next {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bd-black);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--bd-white);
+    @media #{$xs,$sm} {
+        width: 60px;
+        height: 60px;
+    }
+    &:hover {
+        background-color: var(--bd-primary);
+        color: var(--bd-white);
+    }
+}
+.testimonial-nav-prev {
+    transform: translateX(20px);
+    background-color: var(--bd-white);
+    color: var(--bd-black);
+}

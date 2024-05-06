@@ -1,0 +1,82 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.5.1 Header Style 2
+/*----------------------------------------*/
+.logo-black {
+    display: none;
+}
+.bd-sticky {
+	.header-right {
+		&.style-two {
+			.inner-content {
+				.info {
+					.link {
+						color: var(--bd-heading);
+					}
+				}
+			}
+		}
+	}
+}
+.header-style-two {
+    max-width: 1920px;
+    padding: 0px 30px;
+    @media #{$xs,$sm,$md} {
+        padding: 20px 15px;
+    }
+    &.bd-sticky {
+        background-color: var(--bd-white);
+        .main-menu-white {
+            li {
+                a {
+                    color: var(--bd-heading);
+                }
+            }
+        }
+        .menu-icon {
+            span {
+                background: var(--bd-black);
+            }
+            &::before,
+            &::after {
+                background: var(--bd-black);
+            }
+            &:hover {
+                &::before,
+                &::after {
+                    background: var(--bd-primary);
+                } 
+                span {
+                    background: var(--bd-primary);
+                }
+            }
+        }
+        .logo-black {
+            display: block;
+        }
+        .logo-white {
+            display: none;
+        }
+    }
+}
+.header-right {
+    &.style-two {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .inner-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .info {
+                .link {
+                    color: var(--bd-white);
+                    &:hover {
+                        color: var(--bd-primary);
+                    }
+                }
+            }
+        }
+    }
+}

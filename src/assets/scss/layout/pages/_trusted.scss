@@ -1,0 +1,54 @@
+@use "../../utils" as *;
+
+/*----------------------------------------*/
+/*  2.12 Shortcodes
+/*----------------------------------------*/
+.trusted-into {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    .title {
+        width: 100%;
+        text-align: center;
+        @media #{$sm} {
+            min-width: 370px;
+        }
+        b {
+            color: var(--bd-heading);
+            font-weight: var(--bd-fw-sbold);
+        }
+    }
+    .line {
+        height: 1px;
+        width: 100%;
+        background: var(--bd-border-primary);
+        @media #{$xs} {
+            display: none;
+        }
+    }
+}
+.trusted-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    margin-top: 45px;
+    background: var(--bd-aliceBlue);
+    @media #{$sm,$md} {
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media #{$xs} {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.trusted-item {
+.thumb {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        padding: 0px 40px;
+        @media #{$xxs} {
+            height: 70px;
+        }
+    }
+}

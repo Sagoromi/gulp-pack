@@ -1,0 +1,118 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.5.2 Header Style 3
+/*----------------------------------------*/
+.header-padding {
+    padding-left: 160px;
+    padding-right: 160px;
+    @media #{$xxl,$xl,$lg,$md} {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media #{$sm,$xs} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media #{$xxs} {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.header-menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .header-menu{
+        text-align: start;
+    }
+}
+.header-style-three {
+    max-width: 1920px;
+    padding: 21px 100px 0 100px;
+    .header-inner{
+        border-bottom: 1px solid var(--bd-border-primary);
+        padding-bottom: 21px;
+    }
+    &.bd-sticky {
+        background-color: var(--bd-white);
+        .main-menu-white {
+            li {
+                a {
+                    color: var(--bd-heading);
+                }
+            }
+        }
+        .logo-black {
+            display: block;
+        }
+        .logo-white {
+            display: none;
+        }
+    }
+}
+.header-right {
+    &.style-three {
+        .inner-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            transition: all .8s ease-in-out;
+            a{
+                line-height: 24px;
+                display: block;
+            }
+            .address{
+                color: rgba($white, $alpha: 0.7);
+                font-size: 14px;
+                margin-bottom: 0;
+                &:hover{
+                color: var(--bd-white);
+                font-weight: var(--bd-fw-medium);
+                }
+            }
+            .schedule{
+                color: rgba($white, $alpha: 0.7);
+                font-size: 14px;
+                & a:hover{
+                    color: var(--bd-white);
+                    font-weight: var(--bd-fw-medium);
+                    }
+            }
+            .contact {
+                .contact-number, .email {
+                    color: rgba($white, $alpha: 0.7);
+                    font-size: 14px;
+                    font-weight: var(--bd-fw-normal);
+                    &:hover {
+                        color: var(--bd-white);
+                        font-weight: var(--bd-fw-medium);
+                    }
+                }
+            }
+        }
+    }
+}
+.header-style-three {
+    .header-menu-wrapper {
+        .header-logo {
+            display: none;
+        }
+        .bd-main-menu > ul li:nth-child(1) > a {
+            padding-left: 0;
+        }
+        &.bd-sticky {
+            max-width: 1920px;
+            padding: 0 100px;
+            .header-menu {
+                display: flex;
+                align-items: center;
+                gap: 0 35px;
+            }
+            .header-logo {
+                display: block;
+            }
+        }
+    }
+}

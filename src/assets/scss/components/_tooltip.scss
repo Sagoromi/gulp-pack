@@ -1,0 +1,56 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.2 Buttons
+/*----------------------------------------*/
+
+.client-thumb {
+
+	a {
+		&:not(:first-child) {
+			margin-left: -20px;
+		}
+	}
+	img {
+		max-width: 56px;
+		border-radius: 50%;
+		border: 2px solid var(--bd-primary);
+		transition: all 0.3s linear;
+		&:hover {
+			transform: translateY(-5px);
+		}
+	}
+	.arrow {
+		width: 56px;
+		height: 56px;
+		background-color: var(--bd-primary);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		span {
+			font-size: 16px;
+			font-weight: 600;
+			color: var(--bd-white);
+		}
+	}
+}
+
+.bd-avatars {
+	img {
+		border-radius: 100%;
+		padding: 5px;
+		border: 2px solid var(--bd-border-primary);
+		width: 100%;
+	}
+}
+
+.bd-avatars {
+	max-width: 80px;
+	&.size-lg {
+		max-width: 110px;
+	}
+	&.size-sm {
+		max-width: 60px;
+	}
+}

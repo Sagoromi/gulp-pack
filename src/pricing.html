@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+@@include('all-stylesheet.html', {
+"pageTitle" : "Pricing"
+})
+
+<body>
+
+   @@include('top-all.html')
+
+   <!-- Header area start -->
+   @@include('header/header-primary.html')
+   <!-- Header area end -->
+
+   <!-- Body main wrapper start -->
+   <main>
+
+      <!-- Breadcrumb area start -->
+      @@include('breadcrumb/breadcrumb.html', {
+         "breadcrumbSection" : "bd-breadcrumb-area p-relative fix",
+         "breadcrumbImageClass" : "bd-breadcrumb-bg",
+         "breadcrumbImage" : "assets/images/blog/breadcrumb/breadcrumb-01.png",
+         "breadcrumbWrapClass" : "bd-breadcrumb-wrapper p-relative",
+         "breadcrumbClass" : "bd-breadcrumb",
+         "breadcrumbContent" : "bd-breadcrumb-content text-center",
+         "breadcrumbTitleClass" : "bd-breadcrumb-title",
+         "breadcrumbTitle" : "Pricing",
+         "breadcrumbList" : "bd-breadcrumb-list",
+         "breadcrumbPageTitle" : "Pricing",
+      })
+      <!-- Breadcrumb area end -->
+
+      <!-- Pricing area start -->
+      <section class="bd-pricing-area section-space">
+      @@include('pricing/pricing-1.html')
+      </section>
+      <!-- Pricing area end -->
+
+      <!-- Get Touch area start -->
+      <section class="bd-get-touch-area">
+         <div class="container">
+            <div class="get-touch-wrapper">
+               <div class="content">
+                  <h2 class="title">Get in touch</h2>
+               </div>
+               <div class="thumb">
+                  <figure><img src="assets/images/bg/get-touch-bg.png" alt="get touch not found"></figure>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Get Touch area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Footer area start -->
+   @@include('footer/footer-primary.html')
+   <!-- Footer area end -->
+
+   <!-- JS here -->
+   @@include('all-script.html')
+</body>
+
+</html>

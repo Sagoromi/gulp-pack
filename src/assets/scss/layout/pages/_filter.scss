@@ -1,0 +1,56 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  Filter css
+/*----------------------------------------*/
+
+.filter-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 45px;
+    padding: 10px 40px 10px 10px;
+    background: var(--bd-aliceBlue);
+    width: max-content;
+    &:hover {
+        .icon {
+            span {
+                background-color: var(--bd-primary);
+                border-color: transparent;
+                svg * {
+                    fill: var(--bd-white);
+                }
+            }
+        }
+    }
+    .title {
+        a {
+            &:hover {
+                color: var(--bd-primary);
+            }
+        }
+    }
+    .icon {
+        span {
+            width: 70px;
+            height: 70px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bd-white);
+            border-radius: 50%;
+            svg * {
+                @extend %bd-transition-3;
+            }
+        }
+    }
+}
+.swiper-width-auto .swiper-slide {
+    width: auto !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
+.filter-active .swiper-wrapper {
+    display: flex;
+    gap: 20px;
+}

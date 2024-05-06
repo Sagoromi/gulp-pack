@@ -1,0 +1,47 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  3.5.1 Header Style 1
+/*----------------------------------------*/
+.header-primary {
+	&.bd-sticky {
+		&.has-border-bottom {
+			border-bottom: 0;
+		}
+	}
+	&.has-border-bottom {
+		border-bottom: 1px solid var(--bd-border-primary);
+	}
+	.header-inner {
+		padding-left: 30px;
+		@media #{$xs} {
+			padding-left: 15px;
+		}
+	}
+	.bar-icon {
+		span {
+			background: var(--bd-white);
+		}
+	}
+}
+.sidebar-toggle {
+	button {
+		width: 80px;
+		height: 80px;
+		display: inline-flex;
+		justify-content: center;
+		background-color: var(--bd-heading);
+		align-items: center;
+		@media #{$xs,$sm} {
+			width: 70px;
+  			height: 70px;
+		}
+	}
+}
+.header-right.style-one {
+	.header-action {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+}
